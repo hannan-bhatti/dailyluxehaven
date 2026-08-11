@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import { Search, ShoppingBag, Heart, Menu, X, ChevronDown, Sparkles, Crown, Phone, Mail, Watch, Shirt, Home, Gem, Glasses, Moon, Baby, Headphones, Lamp, Layers } from 'lucide-react';
+import React, { useState, useMemo } from 'react';
+import { Search, ShoppingBag, Heart, Menu, X, ChevronDown, Sparkles, Crown, Phone, Mail, TrendingUp, History, ArrowRight, Watch, Shirt, Home, Gem, Glasses, Moon, Baby, Headphones, Lamp, Layers } from 'lucide-react';
 import { CATEGORIES, HUBS } from '../data/categories';
+import { PRODUCTS } from '../data/products';
 
 const CURRENCIES = [
   { code: 'PKR', symbol: 'Rs. ', rate: 280 },
@@ -8,6 +9,17 @@ const CURRENCIES = [
   { code: 'EUR', symbol: '€', rate: 0.92 },
   { code: 'GBP', symbol: '£', rate: 0.79 },
   { code: 'AED', symbol: 'د.إ', rate: 3.67 },
+];
+
+const POPULAR_TAGS = [
+  "18k Gold Jewellery",
+  "Velvet Abaya",
+  "Swiss Watch",
+  "Mulberry Silk",
+  "Wireless Headphones",
+  "Crystal Glassware",
+  "Designer Purse",
+  "Gold Lamp"
 ];
 
 export default function Header({
@@ -22,11 +34,37 @@ export default function Header({
   onOpenCart,
   onOpenWishlist,
   currency,
-  onCurrencyChange
+  onCurrencyChange,
+  onQuickView
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeMegaHub, setActiveMegaHub] = useState(null);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [recentSearches, setRecentSearches] = useState(["Rose Gold Watch", "Velvet Abaya", "Silk Robe"]);
+
+  // Predictive Auto-Complete Matching Products
+  const searchResults = useMemo(() => {
+    if (!searchQuery.trim()) return [];
+    const q = searchQuery.toLowerCase().trim();
+    return PRODUCTS.filter(p => 
+      p.name.toLowerCase().includes(q) ||
+      p.category.toLowerCase().includes(q) ||
+      p.description.toLowerCase().includes(q) ||
+      (p.colors && p.colors.some(c => c.toLowerCase().includes(q)))
+    ).slice(0, 5);
+  }, [searchQuery]);
+
+  const handleSelectTag = (tag) => {
+    onSearchChange(tag);
+    if (!recentSearches.includes(tag)) {
+      setRecentSearches(prev => [tag, ...prev.slice(0, 4)]);
+    }
+  };
+
+  const handleProductClick = (product) => {
+    setIsSearchFocused(false);
+    if (onQuickView) onQuickView(product);
+  };
 
   return (
     <header className="sticky top-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-[#EAE2D5]">
@@ -92,25 +130,143 @@ export default function Header({
             </div>
           </div>
 
-          {/* Search Bar */}
+          {/* Predictive Dynamic Search Bar */}
           <div className="hidden md:flex items-center flex-1 max-w-md mx-6 relative">
-            <div className={`w-full flex items-center bg-white border ${isSearchFocused ? 'border-luxe-gold ring-1 ring-luxe-gold' : 'border-[#E2D9CC]'} rounded-full px-4 py-2 transition-all duration-200 shadow-sm`}>
-              <Search className="w-4 h-4 text-gray-400 mr-2" />
+            <div className={`w-full flex items-center bg-white border ${isSearchFocused ? 'border-luxe-gold ring-2 ring-luxe-gold/30 shadow-md' : 'border-[#E2D9CC]'} rounded-full px-4 py-2 transition-all duration-200 shadow-sm`}>
+              <Search className="w-4 h-4 text-luxe-gold mr-2" />
               <input
                 type="text"
-                placeholder="Search watches, jewellery, abayas, purses..."
+                placeholder="Predictive search: abayas, gold watch, perfumes..."
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
                 onFocus={() => setIsSearchFocused(true)}
-                onBlur={() => setIsSearchFocused(false)}
-                className="w-full text-sm bg-transparent outline-none text-luxe-black placeholder-gray-400"
+                className="w-full text-sm bg-transparent outline-none text-luxe-black placeholder-gray-400 font-medium"
               />
               {searchQuery && (
-                <button onClick={() => onSearchChange('')} className="text-xs text-gray-400 hover:text-luxe-black">
-                  Clear
+                <button
+                  onClick={() => onSearchChange('')}
+                  className="text-xs font-bold text-gray-400 hover:text-luxe-black p-1"
+                >
+                  <X className="w-3.5 h-3.5" />
                 </button>
               )}
             </div>
+
+            {/* Predictive Auto-Complete Overlay Modal */}
+            {isSearchFocused && (
+              <>
+                <div
+                  className="fixed inset-0 z-30 bg-black/20"
+                  onClick={() => setIsSearchFocused(false)}
+                />
+                
+                <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-[#EAE2D5] rounded-3xl shadow-2xl p-5 z-40 animate-fadeIn space-y-4">
+                  
+                  {/* Mode 1: Search Query Present -> Predictive Products */}
+                  {searchQuery.trim() !== '' ? (
+                    <div>
+                      <div className="flex items-center justify-between border-b border-gray-100 pb-2 mb-3">
+                        <span className="text-[11px] font-extrabold uppercase text-luxe-gold tracking-widest flex items-center gap-1.5">
+                          <Sparkles className="w-3.5 h-3.5" />
+                          Predictive Instant Matches ({searchResults.length})
+                        </span>
+                        <span className="text-[10px] text-gray-400">Click to view product</span>
+                      </div>
+
+                      {searchResults.length > 0 ? (
+                        <div className="space-y-2">
+                          {searchResults.map(product => {
+                            const pPrice = Math.round(product.price * currency.rate);
+                            return (
+                              <div
+                                key={product.id}
+                                onClick={() => handleProductClick(product)}
+                                className="flex items-center gap-3 p-2 rounded-xl hover:bg-[#FAF8F5] cursor-pointer transition-colors border border-transparent hover:border-luxe-gold/30 group"
+                              >
+                                <img
+                                  src={product.image}
+                                  alt={product.name}
+                                  className="w-11 h-11 object-cover rounded-lg border border-gray-200 bg-white"
+                                />
+                                <div className="flex-1 min-w-0">
+                                  <h5 className="font-serif text-sm font-bold text-luxe-black group-hover:text-luxe-gold transition-colors truncate">
+                                    {product.name}
+                                  </h5>
+                                  <span className="text-[10px] text-luxe-gold uppercase font-bold tracking-wider">
+                                    {product.category}
+                                  </span>
+                                </div>
+                                <span className="font-extrabold text-xs text-luxe-black">
+                                  {currency.symbol}{pPrice.toLocaleString()}
+                                </span>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      ) : (
+                        <div className="py-4 text-center text-xs text-gray-500">
+                          No instant matches found for "{searchQuery}". Press Enter to view catalog.
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    /* Mode 2: Empty Query -> Trending Tags & Recent Searches */
+                    <div className="space-y-4">
+                      
+                      {/* Popular Searches */}
+                      <div>
+                        <div className="flex items-center gap-1.5 text-xs font-bold text-luxe-black uppercase tracking-wider mb-2.5">
+                          <TrendingUp className="w-3.5 h-3.5 text-luxe-gold" />
+                          <span>Popular Luxury Searches</span>
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                          {POPULAR_TAGS.map(tag => (
+                            <button
+                              key={tag}
+                              onClick={() => handleSelectTag(tag)}
+                              className="text-xs font-semibold px-3 py-1.5 rounded-full bg-[#FAF8F5] border border-[#E2D9CC] text-gray-700 hover:border-luxe-gold hover:bg-luxe-black hover:text-luxe-gold transition-all"
+                            >
+                              {tag}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Recent Searches */}
+                      {recentSearches.length > 0 && (
+                        <div className="pt-3 border-t border-gray-100">
+                          <div className="flex items-center justify-between text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">
+                            <span className="flex items-center gap-1.5">
+                              <History className="w-3.5 h-3.5 text-gray-400" />
+                              Recent Searches
+                            </span>
+                            <button
+                              onClick={() => setRecentSearches([])}
+                              className="text-[10px] text-gray-400 hover:text-red-500 lowercase font-normal"
+                            >
+                              Clear History
+                            </button>
+                          </div>
+                          <div className="flex flex-wrap gap-2">
+                            {recentSearches.map(rec => (
+                              <button
+                                key={rec}
+                                onClick={() => handleSelectTag(rec)}
+                                className="text-xs font-medium px-3 py-1 rounded-lg bg-gray-50 text-gray-600 hover:bg-luxe-gold/20 hover:text-luxe-black transition-colors"
+                              >
+                                🕒 {rec}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                    </div>
+                  )}
+
+                </div>
+              </>
+            )}
           </div>
 
           {/* Header Action Icons */}

@@ -134,6 +134,7 @@ export default function App() {
         onOpenWishlist={() => setWishlistOpen(true)}
         currency={currency}
         onCurrencyChange={setCurrency}
+        onQuickView={setQuickViewProduct}
       />
 
       {/* Main Content */}
