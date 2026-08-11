@@ -143,45 +143,30 @@ export default function App() {
         {/* Hero Slider */}
         <HeroSlider onSelectCategory={handleSelectCategory} />
 
-        {/* Category Landing Hub view if Hub is active */}
-        {activeHubId ? (
-          <HubLanding
-            activeHubId={activeHubId}
-            onSelectCategory={handleSelectCategory}
-            onQuickView={setQuickViewProduct}
-            onAddToCart={handleAddToCart}
-            onToggleWishlist={handleToggleWishlist}
-            wishlistIds={wishlistIds}
-            currency={currency}
-          />
-        ) : (
-          <>
-            {/* 12 Categories Grid */}
-            <CategoryGrid
-              activeCategory={activeCategory}
-              onSelectCategory={handleSelectCategory}
-            />
+        {/* 12 Categories Grid */}
+        <CategoryGrid
+          activeCategory={activeCategory}
+          onSelectCategory={handleSelectCategory}
+        />
 
-            {/* Deals of the Day Flash Sale */}
-            <FlashSale
-              onQuickView={setQuickViewProduct}
-              onAddToCart={handleAddToCart}
-              currency={currency}
-            />
+        {/* Deals of the Day Flash Sale */}
+        <FlashSale
+          onQuickView={setQuickViewProduct}
+          onAddToCart={handleAddToCart}
+          currency={currency}
+        />
 
-            {/* Filterable & Searchable Product Catalog */}
-            <ProductCatalog
-              activeCategory={activeCategory}
-              onSelectCategory={setActiveCategory}
-              searchQuery={searchQuery}
-              onQuickView={setQuickViewProduct}
-              onAddToCart={handleAddToCart}
-              onToggleWishlist={handleToggleWishlist}
-              wishlistIds={wishlistIds}
-              currency={currency}
-            />
-          </>
-        )}
+        {/* Filterable & Searchable Product Catalog */}
+        <ProductCatalog
+          activeCategory={activeCategory}
+          onSelectCategory={setActiveCategory}
+          searchQuery={searchQuery}
+          onQuickView={setQuickViewProduct}
+          onAddToCart={handleAddToCart}
+          onToggleWishlist={handleToggleWishlist}
+          wishlistIds={wishlistIds}
+          currency={currency}
+        />
 
         {/* Patron Testimonials */}
         <Testimonials />
