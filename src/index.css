@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #E8C872 0%, #C5A059 50%, #9A7B38 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .bg-gold-gradient {
+    background: linear-gradient(135deg, #D4AF37 0%, #C5A059 50%, #B38F43 100%);
+  }
+
+  .bg-gold-gradient-hover {
+    background: linear-gradient(135deg, #E8C872 0%, #D4AF37 50%, #C5A059 100%);
+  }
+
+  .border-gold-gradient {
+    border-image: linear-gradient(135deg, #C5A059, #E8C872, #9A7B38) 1;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .glass-dark {
+    background: rgba(14, 14, 16, 0.9);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4C5A9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+/* Shimmer animations */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s infinite;
+}
