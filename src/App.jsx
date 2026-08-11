@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import HeroSlider from './components/HeroSlider';
 import CategoryGrid from './components/CategoryGrid';
-import HubLanding from './components/HubLanding';
 import FlashSale from './components/FlashSale';
 import ProductCatalog from './components/ProductCatalog';
 import ProductModal from './components/ProductModal';
