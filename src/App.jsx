@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import HeroSlider from './components/HeroSlider';
 import CategoryGrid from './components/CategoryGrid';
+import HubLanding from './components/HubLanding';
 import FlashSale from './components/FlashSale';
 import ProductCatalog from './components/ProductCatalog';
 import ProductModal from './components/ProductModal';
@@ -14,6 +15,7 @@ import Toast from './components/Toast';
 
 export default function App() {
   const [activeCategory, setActiveCategory] = useState('all');
+  const [activeHubId, setActiveHubId] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [currency, setCurrency] = useState({ code: 'PKR', symbol: 'Rs. ', rate: 280 });
   
@@ -97,6 +99,13 @@ export default function App() {
     }
   };
 
+  // Hub select handler
+  const handleSelectHub = (hubId) => {
+    setActiveHubId(hubId);
+    setActiveCategory('all');
+    window.scrollTo({ top: 400, behavior: 'smooth' });
+  };
+
   // Proceed checkout
   const handleProceedCheckout = (data) => {
     setCheckoutData(data);
@@ -115,6 +124,8 @@ export default function App() {
       <Header
         activeCategory={activeCategory}
         onSelectCategory={handleSelectCategory}
+        activeHubId={activeHubId}
+        onSelectHub={handleSelectHub}
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
         cartCount={cartItems.reduce((sum, item) => sum + item.quantity, 0)}
@@ -131,30 +142,45 @@ export default function App() {
         {/* Hero Slider */}
         <HeroSlider onSelectCategory={handleSelectCategory} />
 
-        {/* 12 Categories Grid */}
-        <CategoryGrid
-          activeCategory={activeCategory}
-          onSelectCategory={handleSelectCategory}
-        />
+        {/* Category Landing Hub view if Hub is active */}
+        {activeHubId ? (
+          <HubLanding
+            activeHubId={activeHubId}
+            onSelectCategory={handleSelectCategory}
+            onQuickView={setQuickViewProduct}
+            onAddToCart={handleAddToCart}
+            onToggleWishlist={handleToggleWishlist}
+            wishlistIds={wishlistIds}
+            currency={currency}
+          />
+        ) : (
+          <>
+            {/* 12 Categories Grid */}
+            <CategoryGrid
+              activeCategory={activeCategory}
+              onSelectCategory={handleSelectCategory}
+            />
 
-        {/* Deals of the Day Flash Sale */}
-        <FlashSale
-          onQuickView={setQuickViewProduct}
-          onAddToCart={handleAddToCart}
-          currency={currency}
-        />
+            {/* Deals of the Day Flash Sale */}
+            <FlashSale
+              onQuickView={setQuickViewProduct}
+              onAddToCart={handleAddToCart}
+              currency={currency}
+            />
 
-        {/* Filterable & Searchable Product Catalog */}
-        <ProductCatalog
-          activeCategory={activeCategory}
-          onSelectCategory={setActiveCategory}
-          searchQuery={searchQuery}
-          onQuickView={setQuickViewProduct}
-          onAddToCart={handleAddToCart}
-          onToggleWishlist={handleToggleWishlist}
-          wishlistIds={wishlistIds}
-          currency={currency}
-        />
+            {/* Filterable & Searchable Product Catalog */}
+            <ProductCatalog
+              activeCategory={activeCategory}
+              onSelectCategory={setActiveCategory}
+              searchQuery={searchQuery}
+              onQuickView={setQuickViewProduct}
+              onAddToCart={handleAddToCart}
+              onToggleWishlist={handleToggleWishlist}
+              wishlistIds={wishlistIds}
+              currency={currency}
+            />
+          </>
+        )}
 
         {/* Patron Testimonials */}
         <Testimonials />
