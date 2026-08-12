@@ -328,22 +328,22 @@ export default function Header({
               onClick={() => onSelectCategory('all')}
               className={`pb-1 border-b-2 transition-all duration-200 whitespace-nowrap ${
                 activeCategory === 'all'
-                  ? 'border-luxe-gold text-luxe-gold font-bold'
-                  : 'border-transparent text-gray-700 hover:text-luxe-gold'
+                  ? 'border-[#B88015] text-[#B88015] font-extrabold tracking-wider'
+                  : 'border-transparent text-gray-800 hover:text-[#B88015]'
               }`}
             >
               All Luxe Collections
             </button>
 
-            {/* Direct Links for 12 categories */}
-            {CATEGORIES.map(cat => (
+            {/* Direct Links for Header Categories (excluding Home decorators) */}
+            {CATEGORIES.filter(cat => cat.id !== 'home-decorators').map(cat => (
               <button
                 key={cat.id}
                 onClick={() => onSelectCategory(cat.id)}
                 className={`pb-1 border-b-2 transition-all duration-200 whitespace-nowrap ${
                   activeCategory === cat.id
-                    ? 'border-luxe-gold text-luxe-gold font-bold'
-                    : 'border-transparent text-gray-700 hover:text-luxe-gold'
+                    ? 'border-[#B88015] text-[#B88015] font-extrabold tracking-wider'
+                    : 'border-transparent text-gray-800 hover:text-[#B88015]'
                 }`}
               >
                 {cat.name}
@@ -370,15 +370,15 @@ export default function Header({
             <div className="grid grid-cols-2 gap-2">
               <button
                 onClick={() => { onSelectCategory('all'); setMobileMenuOpen(false); }}
-                className={`text-left px-3 py-2 rounded-md text-xs font-semibold ${activeCategory === 'all' ? 'bg-luxe-gold text-white' : 'hover:bg-luxe-sand'}`}
+                className={`text-left px-3 py-2 rounded-md text-xs font-semibold ${activeCategory === 'all' ? 'bg-[#B88015] text-white' : 'hover:bg-luxe-sand'}`}
               >
                 All Products
               </button>
-              {CATEGORIES.map(cat => (
+              {CATEGORIES.filter(cat => cat.id !== 'home-decorators').map(cat => (
                 <button
                   key={cat.id}
                   onClick={() => { onSelectCategory(cat.id); setMobileMenuOpen(false); }}
-                  className={`text-left px-3 py-2 rounded-md text-xs font-semibold ${activeCategory === cat.id ? 'bg-luxe-gold text-white' : 'hover:bg-luxe-sand text-gray-800'}`}
+                  className={`text-left px-3 py-2 rounded-md text-xs font-semibold ${activeCategory === cat.id ? 'bg-[#B88015] text-white' : 'hover:bg-luxe-sand text-gray-800'}`}
                 >
                   {cat.name}
                 </button>

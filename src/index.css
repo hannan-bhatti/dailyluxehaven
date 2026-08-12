@@ -4,21 +4,21 @@
 
 @layer utilities {
   .text-gold-gradient {
-    background: linear-gradient(135deg, #E8C872 0%, #C5A059 50%, #9A7B38 100%);
+    background: linear-gradient(135deg, #D4A837 0%, #B88015 50%, #8F6108 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   
   .bg-gold-gradient {
-    background: linear-gradient(135deg, #D4AF37 0%, #C5A059 50%, #B38F43 100%);
+    background: linear-gradient(135deg, #D4A837 0%, #B88015 50%, #A36D08 100%);
   }
 
   .bg-gold-gradient-hover {
-    background: linear-gradient(135deg, #E8C872 0%, #D4AF37 50%, #C5A059 100%);
+    background: linear-gradient(135deg, #E8C872 0%, #D4A837 50%, #B88015 100%);
   }
 
   .border-gold-gradient {
-    border-image: linear-gradient(135deg, #C5A059, #E8C872, #9A7B38) 1;
+    border-image: linear-gradient(135deg, #B88015, #D4A837, #8F6108) 1;
   }
 
   .glass-card {

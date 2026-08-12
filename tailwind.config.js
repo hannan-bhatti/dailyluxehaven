@@ -8,9 +8,10 @@ export default {
     extend: {
       colors: {
         luxe: {
-          gold: "#C5A059",
-          "gold-light": "#E8C872",
-          "gold-dark": "#9A7B38",
+          gold: "#B88015",
+          "gold-light": "#D4A837",
+          "gold-dark": "#8F6108",
+          "gold-strong": "#A36D08",
           black: "#0B0B0C",
           charcoal: "#141417",
           slate: "#1E1E24",
