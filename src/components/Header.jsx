@@ -12,14 +12,14 @@ const CURRENCIES = [
 ];
 
 const POPULAR_TAGS = [
-  "18k Gold Jewellery",
+  "Diamond Jewellery",
   "Velvet Abaya",
   "Swiss Watch",
   "Mulberry Silk",
   "Wireless Headphones",
   "Crystal Glassware",
   "Designer Purse",
-  "Gold Lamp"
+  "Ambient Lamp"
 ];
 
 export default function Header({
@@ -40,7 +40,7 @@ export default function Header({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeMegaHub, setActiveMegaHub] = useState(null);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
-  const [recentSearches, setRecentSearches] = useState(["Rose Gold Watch", "Velvet Abaya", "Silk Robe"]);
+  const [recentSearches, setRecentSearches] = useState(["Classic Watch", "Velvet Abaya", "Silk Robe"]);
 
   // Predictive Auto-Complete Matching Products
   const searchResults = useMemo(() => {
@@ -136,7 +136,7 @@ export default function Header({
               <Search className="w-4 h-4 text-luxe-gold mr-2" />
               <input
                 type="text"
-                placeholder="Predictive search: abayas, gold watch, perfumes..."
+                placeholder="Predictive search: abayas, watches, purses, cosmetics..."
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
                 onFocus={() => setIsSearchFocused(true)}

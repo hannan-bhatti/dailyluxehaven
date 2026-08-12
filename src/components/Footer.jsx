@@ -85,7 +85,7 @@ export default function Footer({ onSelectCategory, onShowToast, onOpenFaqTerms, 
               </div>
             </div>
             <p className="text-gray-400 text-xs font-light leading-relaxed">
-              Daily Luxe Haven is your premier luxury destination for Swiss timepieces, 18k gold diamond jewellery, Italian leather purses, modest silk abayas, high-tech gadgets, and home decor.
+              Daily Luxe Haven is your premier luxury destination for Swiss timepieces, fine diamond jewellery, Italian leather purses, modest silk abayas, high-tech gadgets, and home decor.
             </p>
             <div className="flex items-center gap-2 text-[11px] text-luxe-gold font-semibold pt-1">
               <ShieldCheck className="w-4 h-4" />

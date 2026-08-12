@@ -10,7 +10,7 @@ export const PRODUCTS = [
   // WATCHES
   {
     id: "w-01",
-    name: "Royal Oak Chronograph 18k Rose Gold",
+    name: "Royal Oak Automatic Chronograph",
     category: "watches",
     price: 3450,
     originalPrice: 4200,
@@ -22,7 +22,7 @@ export const PRODUCTS = [
     flashSaleEndTime: "2026-08-15T23:59:59",
     image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
-    description: "Impeccably crafted in 18k Rose Gold with an automatic mechanical movement, sapphire crystal back, and hand-stitched alligator strap.",
+    description: "Impeccably crafted with an automatic mechanical movement, sapphire crystal back, and hand-stitched alligator strap.",
     colors: ["Rose Gold", "Obsidian Black", "Platinum Silver"],
     sizes: ["39mm", "41mm", "45mm"],
     sizePrices: {
@@ -32,7 +32,7 @@ export const PRODUCTS = [
     },
     specs: {
       "Movement": "Swiss Automatic Calibre DLH-98",
-      "Case Material": "18K Solid Rose Gold",
+      "Case Material": "Solid Steel & Rose Accent",
       "Water Resistance": "100m / 330ft",
       "Warranty": "5 Year International Guarantee"
     }
@@ -49,8 +49,8 @@ export const PRODUCTS = [
     isBestseller: false,
     image: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
-    description: "An extraordinary skeletonized dial revealing high-precision Swiss movement housed inside a clear sapphire case with gold accents.",
-    colors: ["Sapphire Gold", "Midnight Blue"],
+    description: "An extraordinary skeletonized dial revealing high-precision Swiss movement housed inside a clear sapphire case with metallic accents.",
+    colors: ["Sapphire Silver", "Midnight Blue"],
     sizes: ["40mm", "42mm", "44mm"],
     sizePrices: {
       "40mm": 2890,
@@ -77,8 +77,8 @@ export const PRODUCTS = [
     isBestseller: true,
     image: "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
-    description: "100% pure Mulberry silk outer shell with double-breasted gold button detail and detachable belt. Flowing silhouette of pure elegance.",
-    colors: ["Champagne Gold", "Onyx Black", "Ivory Cream"],
+    description: "100% pure Mulberry silk outer shell with double-breasted metallic button detail and detachable belt. Flowing silhouette of pure elegance.",
+    colors: ["Champagne", "Onyx Black", "Ivory Cream"],
     sizes: ["XS", "S", "M", "L", "XL"],
     sizePrices: {
       "XS": 820,
@@ -95,45 +95,45 @@ export const PRODUCTS = [
   },
   {
     id: "c-02",
-    name: "Velvet Midnight Blazer with Gold Embroidery",
+    name: "Velvet Midnight Blazer with Royal Embroidery",
     category: "clothes",
     price: 750,
-    originalPrice: 920,
+    originalPrice: 890,
     rating: 4.7,
-    reviewsCount: 29,
+    reviewsCount: 41,
     isNew: false,
     isBestseller: false,
     image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80",
-    hoverImage: "https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=800&q=80",
-    description: "Deep dark navy velvet blazer featuring hand-threaded gold filigree along lapels and pockets. Luxurious satin lining.",
-    colors: ["Midnight Blue", "Deep Emerald"],
+    hoverImage: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80",
+    description: "Deep dark navy velvet blazer featuring hand-threaded metallic filigree along lapels and pockets. Luxurious satin lining.",
+    colors: ["Midnight Navy", "Emerald Green"],
     sizes: ["S", "M", "L", "XL"],
     sizePrices: {
       "S": 750,
-      "M": 810,
-      "L": 880,
-      "XL": 950
+      "M": 790,
+      "L": 840,
+      "XL": 890
     },
     specs: {
-      "Material": "Italian Cotton Velvet",
-      "Details": "Hand-stitched Gold Metallic Thread"
+      "Material": "Cotton Velvet",
+      "Details": "Hand-stitched Metallic Thread"
     }
   },
 
   // HOUSE HOLD
   {
     id: "h-01",
-    name: "Imperial Gold-Rimmed Crystal Cut Glass Set",
+    name: "Imperial Rimmed Crystal Cut Glass Set",
     category: "house-hold",
-    price: 420,
-    originalPrice: 550,
+    price: 320,
+    originalPrice: 400,
     rating: 4.9,
     reviewsCount: 52,
-    isNew: false,
+    isNew: true,
     isBestseller: true,
-    image: "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80",
-    hoverImage: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80",
-    description: "Handblown Lead-Free Crystal decanter and matching tumblers dipped in 24k electroplated gold rims.",
+    image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80",
+    hoverImage: "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80",
+    description: "Handblown Lead-Free Crystal decanter and matching tumblers with hand-dipped electroplated metallic rims.",
     colors: ["Gold & Clear", "Amber Gold"],
     sizes: ["4-Piece Set", "7-Piece Set", "12-Piece Set"],
     sizePrices: {
