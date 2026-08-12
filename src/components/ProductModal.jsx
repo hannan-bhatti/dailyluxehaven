@@ -9,7 +9,8 @@ export default function ProductModal({
   onToggleWishlist,
   isWishlisted,
   currency,
-  onDirectBuy
+  onDirectBuy,
+  onOpenSizeGuide
 }) {
   if (!product) return null;
 
@@ -171,9 +172,19 @@ export default function ProductModal({
               {/* Variant Selector: Size */}
               {product.sizes && product.sizes.length > 0 && (
                 <div className="mb-6">
-                  <label className="block text-xs font-extrabold uppercase text-gray-700 tracking-wider mb-2">
-                    Select Option / Size: <span className="text-luxe-gold">{selectedSize}</span>
-                  </label>
+                  <div className="flex items-center justify-between mb-2">
+                    <label className="block text-xs font-extrabold uppercase text-gray-700 tracking-wider">
+                      Select Option / Size: <span className="text-[#B88015]">{selectedSize}</span>
+                    </label>
+                    {onOpenSizeGuide && (
+                      <button
+                        onClick={() => onOpenSizeGuide(product.category)}
+                        className="text-[11px] font-bold text-[#B88015] hover:underline flex items-center gap-1"
+                      >
+                        <span>📏 Fitting Size Guide</span>
+                      </button>
+                    )}
+                  </div>
                   <div className="flex flex-wrap gap-2">
                     {product.sizes.map(size => {
                       const sPrice = Math.round(getSizePrice(product, size) * currency.rate);

@@ -8,6 +8,8 @@ import ProductModal from './components/ProductModal';
 import CartDrawer from './components/CartDrawer';
 import WishlistDrawer from './components/WishlistDrawer';
 import CheckoutModal from './components/CheckoutModal';
+import FaqTermsModal from './components/FaqTermsModal';
+import SizeGuideModal from './components/SizeGuideModal';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import Toast from './components/Toast';
@@ -29,6 +31,12 @@ export default function App() {
   const [checkoutOpen, setCheckoutOpen] = useState(false);
   const [checkoutData, setCheckoutData] = useState(null);
 
+  // FAQs & Size Guide Modals
+  const [faqTermsOpen, setFaqTermsOpen] = useState(false);
+  const [faqTermsTab, setFaqTermsTab] = useState('faq');
+  const [sizeGuideOpen, setSizeGuideOpen] = useState(false);
+  const [sizeGuideCategory, setSizeGuideCategory] = useState('abayas');
+
   // Toast
   const [toastMessage, setToastMessage] = useState(null);
 
@@ -37,6 +45,21 @@ export default function App() {
     setTimeout(() => {
       setToastMessage(null);
     }, 4000);
+  };
+
+  const handleOpenFaqTerms = (tab = 'faq') => {
+    setFaqTermsTab(tab);
+    setFaqTermsOpen(true);
+  };
+
+  const handleOpenSizeGuide = (cat = 'abayas') => {
+    if (cat === 'Watches' || cat === 'watches') setSizeGuideCategory('watches');
+    else if (cat === 'Jewellery' || cat === 'jewellery') setSizeGuideCategory('jewellery');
+    else if (cat === 'Purses' || cat === 'purses') setSizeGuideCategory('purses');
+    else if (cat === 'Clothes' || cat === 'clothes') setSizeGuideCategory('clothes');
+    else setSizeGuideCategory('abayas');
+    
+    setSizeGuideOpen(true);
   };
 
   // Add to Cart
@@ -176,6 +199,8 @@ export default function App() {
       <Footer
         onSelectCategory={handleSelectCategory}
         onShowToast={showToast}
+        onOpenFaqTerms={handleOpenFaqTerms}
+        onOpenSizeGuide={handleOpenSizeGuide}
       />
 
       {/* Modals & Drawers */}
@@ -187,6 +212,7 @@ export default function App() {
         isWishlisted={quickViewProduct ? wishlistIds.includes(quickViewProduct.id) : false}
         currency={currency}
         onDirectBuy={handleDirectBuy}
+        onOpenSizeGuide={handleOpenSizeGuide}
       />
 
       <CartDrawer
@@ -214,6 +240,20 @@ export default function App() {
         checkoutData={checkoutData}
         onOrderComplete={handleOrderComplete}
         currency={currency}
+      />
+
+      {/* FAQs, Terms & Privacy Policy Modal */}
+      <FaqTermsModal
+        isOpen={faqTermsOpen}
+        onClose={() => setFaqTermsOpen(false)}
+        initialTab={faqTermsTab}
+      />
+
+      {/* Size & Fitting Guide Modal */}
+      <SizeGuideModal
+        isOpen={sizeGuideOpen}
+        onClose={() => setSizeGuideOpen(false)}
+        initialCategory={sizeGuideCategory}
       />
 
       {/* Toast Notification */}

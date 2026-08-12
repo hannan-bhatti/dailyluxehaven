@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Mail, Phone, ArrowRight, ShieldCheck, Sparkles, Crown } from 'lucide-react';
 import { CATEGORIES } from '../data/categories';
 
-export default function Footer({ onSelectCategory, onShowToast }) {
+export default function Footer({ onSelectCategory, onShowToast, onOpenFaqTerms, onOpenSizeGuide }) {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
@@ -126,11 +126,31 @@ export default function Footer({ onSelectCategory, onShowToast }) {
               Customer Care
             </h4>
             <ul className="space-y-2.5 text-gray-400 font-medium">
-              <li><a href="#catalog" className="hover:text-luxe-gold transition-colors">• 30-Day Global Returns</a></li>
-              <li><a href="#catalog" className="hover:text-luxe-gold transition-colors">• Authenticity Guarantee</a></li>
-              <li><a href="#catalog" className="hover:text-luxe-gold transition-colors">• Express Shipping Policy</a></li>
-              <li><a href="#catalog" className="hover:text-luxe-gold transition-colors">• Size & Fitting Guide</a></li>
-              <li><a href="#catalog" className="hover:text-luxe-gold transition-colors">• FAQs & Terms of Service</a></li>
+              <li>
+                <button onClick={() => onOpenFaqTerms && onOpenFaqTerms('returns')} className="hover:text-luxe-gold transition-colors text-left">
+                  • 30-Day Global Returns
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onOpenFaqTerms && onOpenFaqTerms('faq')} className="hover:text-luxe-gold transition-colors text-left">
+                  • Authenticity Guarantee
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onOpenFaqTerms && onOpenFaqTerms('faq')} className="hover:text-luxe-gold transition-colors text-left">
+                  • Express Shipping Policy
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onOpenSizeGuide && onOpenSizeGuide('abayas')} className="hover:text-luxe-gold transition-colors text-left">
+                  • Size & Fitting Guide
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onOpenFaqTerms && onOpenFaqTerms('terms')} className="hover:text-luxe-gold transition-colors text-left">
+                  • FAQs & Terms of Service
+                </button>
+              </li>
             </ul>
           </div>
 
@@ -226,11 +246,17 @@ export default function Footer({ onSelectCategory, onShowToast }) {
             © {new Date().getFullYear()} <strong className="text-luxe-gold">Daily Luxe Haven</strong>. All Rights Reserved. Live Daily. Shop Luxe.
           </p>
           <div className="flex items-center gap-4">
-            <span>Privacy Policy</span>
+            <button onClick={() => onOpenFaqTerms && onOpenFaqTerms('privacy')} className="hover:text-luxe-gold transition-colors">
+              Privacy Policy
+            </button>
             <span>•</span>
-            <span>Terms of Service</span>
+            <button onClick={() => onOpenFaqTerms && onOpenFaqTerms('terms')} className="hover:text-luxe-gold transition-colors">
+              Terms of Service
+            </button>
             <span>•</span>
-            <span>Cookie Settings</span>
+            <button onClick={() => onOpenFaqTerms && onOpenFaqTerms('faq')} className="hover:text-luxe-gold transition-colors">
+              Cookie Settings
+            </button>
           </div>
         </div>
 
