@@ -223,6 +223,7 @@ export default function App() {
         onRemoveItem={handleRemoveFromCart}
         onProceedCheckout={handleProceedCheckout}
         currency={currency}
+        onAddToCart={handleAddToCart}
       />
 
       <WishlistDrawer
