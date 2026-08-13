@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Star, ShoppingBag, Heart, ShieldCheck, Truck, RotateCcw, Check, Sparkles } from 'lucide-react';
+import { X, Star, ShoppingBag, Heart, ShieldCheck, Truck, RotateCcw, Check, Sparkles, Banknote } from 'lucide-react';
 import { getSizePrice } from '../data/products';
 
 export default function ProductModal({
@@ -283,6 +283,39 @@ export default function ProductModal({
                 <Sparkles className="w-4 h-4" />
                 <span>Instant Checkout</span>
               </button>
+
+              {/* Trust Badges & Clear 7-Day Returns Guarantees */}
+              <div className="mt-4 pt-3 border-t border-[#EAE2D5] bg-[#FAF8F5] p-3 rounded-2xl space-y-2 border border-[#E2D9CC]">
+                <div className="grid grid-cols-3 gap-2 text-center">
+                  
+                  {/* Shipping Timeline */}
+                  <div className="flex flex-col items-center justify-center p-2 rounded-xl bg-white border border-gray-200 shadow-sm">
+                    <Truck className="w-4 h-4 text-[#B88015] mb-1" />
+                    <span className="text-[10px] font-bold text-luxe-black leading-tight">2-4 Days Delivery</span>
+                    <span className="text-[9px] text-gray-500 font-medium mt-0.5">Nationwide PK</span>
+                  </div>
+
+                  {/* Cash on Delivery */}
+                  <div className="flex flex-col items-center justify-center p-2 rounded-xl bg-white border border-gray-200 shadow-sm">
+                    <Banknote className="w-4 h-4 text-[#B88015] mb-1" />
+                    <span className="text-[10px] font-bold text-luxe-black leading-tight">COD Available</span>
+                    <span className="text-[9px] text-gray-500 font-medium mt-0.5">Pay At Doorstep</span>
+                  </div>
+
+                  {/* Easy 7-Day Returns */}
+                  <div className="flex flex-col items-center justify-center p-2 rounded-xl bg-white border border-gray-200 shadow-sm">
+                    <RotateCcw className="w-4 h-4 text-[#B88015] mb-1" />
+                    <span className="text-[10px] font-bold text-luxe-black leading-tight">7-Day Returns</span>
+                    <span className="text-[9px] text-gray-500 font-medium mt-0.5">Easy Exchanges</span>
+                  </div>
+
+                </div>
+
+                <div className="flex items-center justify-center gap-1.5 text-[10px] font-extrabold text-emerald-800 pt-1">
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+                  <span>100% Certified Authentic & Insured Delivery</span>
+                </div>
+              </div>
             </div>
 
           </div>

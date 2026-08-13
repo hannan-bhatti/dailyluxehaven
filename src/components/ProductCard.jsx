@@ -127,7 +127,7 @@ export default function ProductCard({
 
       {/* Bottom Pricing & Add to Cart Button */}
       <div className="p-5 pt-0 border-t border-transparent">
-        <div className="flex items-baseline justify-between mb-3">
+        <div className="flex items-baseline justify-between mb-2">
           <div className="flex items-baseline gap-2">
             <span className="text-xl font-extrabold text-luxe-black">
               {currency.symbol}{convertedPrice.toLocaleString()}
@@ -140,11 +140,19 @@ export default function ProductCard({
           </div>
         </div>
 
+        {/* Trust Badge Indicator */}
+        <div className="flex items-center justify-between text-[10px] font-semibold text-gray-500 mb-2 px-0.5">
+          <span className="flex items-center gap-1 text-emerald-700 font-bold">
+            <span>✓ COD & 7-Day Returns</span>
+          </span>
+          <span className="text-gray-500">🚚 2-4 Days PK</span>
+        </div>
+
         <button
           onClick={() => onAddToCart(product)}
-          className="w-full bg-[#FAF8F5] hover:bg-luxe-black hover:text-white border border-[#EAE2D5] text-luxe-black font-bold py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 group/btn"
+          className="w-full bg-[#FAF8F5] hover:bg-luxe-black hover:text-white border border-[#EAE2D5] text-luxe-black font-bold py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 group"
         >
-          <ShoppingBag className="w-3.5 h-3.5 text-luxe-gold group-hover/btn:text-luxe-gold" />
+          <ShoppingBag className="w-3.5 h-3.5 text-luxe-gold group-hover:text-luxe-gold" />
           <span>Add To Cart</span>
         </button>
       </div>
