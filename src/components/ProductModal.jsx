@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { X, Star, ShoppingBag, Heart, ShieldCheck, Truck, RotateCcw, Check, Sparkles, Banknote } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { X, Star, ShoppingBag, Heart, ShieldCheck, Truck, RotateCcw, Check, Sparkles, Banknote, Play, Image as ImageIcon } from 'lucide-react';
 import { getSizePrice } from '../data/products';
 
 export default function ProductModal({
@@ -18,6 +18,26 @@ export default function ProductModal({
   const [selectedSize, setSelectedSize] = useState(product.sizes ? product.sizes[0] : null);
   const [quantity, setQuantity] = useState(1);
   const [activeTab, setActiveTab] = useState('details');
+  const [activeImage, setActiveImage] = useState(product.image);
+  const [isPlayingVideo, setIsPlayingVideo] = useState(false);
+
+  useEffect(() => {
+    if (product) {
+      setSelectedColor(product.colors ? product.colors[0] : null);
+      setSelectedSize(product.sizes ? product.sizes[0] : null);
+      setActiveImage(product.image);
+      setIsPlayingVideo(false);
+      setQuantity(1);
+    }
+  }, [product]);
+
+  const handleColorChange = (color) => {
+    setSelectedColor(color);
+    if (product.colorImages && product.colorImages[color]) {
+      setActiveImage(product.colorImages[color]);
+      setIsPlayingVideo(false);
+    }
+  };
 
   const currentPrice = getSizePrice(product, selectedSize);
   const convertedPrice = Math.round(currentPrice * currency.rate);
@@ -43,33 +63,111 @@ export default function ProductModal({
     });
   };
 
+  const galleryImages = product.gallery && product.gallery.length > 0 
+    ? product.gallery 
+    : [product.image, product.hoverImage].filter(Boolean);
+
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/70 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 animate-fadeIn">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/75 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 animate-fadeIn">
       
       {/* Modal Card */}
-      <div className="relative bg-white rounded-3xl max-w-4xl w-full overflow-hidden shadow-2xl border border-[#EAE2D5] my-8">
+      <div className="relative bg-white rounded-3xl max-w-4xl w-full overflow-hidden shadow-2xl border border-[#EAE2D5] my-6 max-h-[92vh] flex flex-col">
         
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 bg-gray-100 hover:bg-luxe-gold hover:text-white text-gray-700 p-2 rounded-full transition-colors"
+          className="absolute top-4 right-4 z-20 bg-gray-100 hover:bg-luxe-gold hover:text-white text-gray-700 p-2.5 rounded-full transition-all shadow"
         >
           <X className="w-5 h-5" />
         </button>
 
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="overflow-y-auto grid grid-cols-1 md:grid-cols-2">
           
-          {/* Left Column: Image Preview */}
-          <div className="bg-[#FAF8F5] p-6 flex flex-col justify-between relative border-r border-[#EAE2D5]">
-            <div className="relative h-80 sm:h-96 rounded-2xl overflow-hidden shadow-sm">
-              <img
-                src={product.image}
-                alt={product.name}
-                className="w-full h-full object-cover object-center"
-              />
-              <span className="absolute top-4 left-4 bg-luxe-black text-luxe-gold text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
-                {product.category}
-              </span>
+          {/* Left Column: Image Preview & Gallery */}
+          <div className="bg-[#FAF8F5] p-5 sm:p-6 flex flex-col justify-between relative border-b md:border-b-0 md:border-r border-[#EAE2D5]">
+            <div>
+              {/* Media Container */}
+              <div className="relative h-72 sm:h-96 rounded-2xl overflow-hidden shadow-sm bg-black/5">
+                {isPlayingVideo && product.video ? (
+                  <video
+                    src={product.video}
+                    controls
+                    autoPlay
+                    loop
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <img
+                    src={activeImage}
+                    alt={product.name}
+                    className="w-full h-full object-cover object-center transition-all duration-300"
+                  />
+                )}
+
+                {/* Category Badge */}
+                <span className="absolute top-3 left-3 bg-luxe-black/90 text-luxe-gold text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm border border-luxe-gold/20">
+                  {product.category}
+                </span>
+
+                {/* Video Switcher Badge if video exists */}
+                {product.video && (
+                  <button
+                    onClick={() => setIsPlayingVideo(!isPlayingVideo)}
+                    className={`absolute bottom-3 right-3 px-3 py-1.5 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-md backdrop-blur-md ${
+                      isPlayingVideo
+                        ? 'bg-luxe-black text-luxe-gold border border-luxe-gold/40'
+                        : 'bg-white/90 text-gray-900 hover:bg-luxe-gold hover:text-white'
+                    }`}
+                  >
+                    {isPlayingVideo ? (
+                      <>
+                        <ImageIcon className="w-3.5 h-3.5" />
+                        <span>View Photos</span>
+                      </>
+                    ) : (
+                      <>
+                        <Play className="w-3.5 h-3.5 fill-current" />
+                        <span>Watch Video</span>
+                      </>
+                    )}
+                  </button>
+                )}
+              </div>
+
+              {/* Gallery Thumbnails Strip */}
+              {galleryImages.length > 1 && (
+                <div className="flex items-center gap-2 mt-3 overflow-x-auto pb-1 scrollbar-thin">
+                  {galleryImages.map((img, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => {
+                        setActiveImage(img);
+                        setIsPlayingVideo(false);
+                      }}
+                      className={`relative flex-shrink-0 w-14 h-14 rounded-xl overflow-hidden border-2 transition-all ${
+                        !isPlayingVideo && activeImage === img
+                          ? 'border-luxe-gold ring-2 ring-luxe-gold/30 scale-105'
+                          : 'border-gray-200 opacity-70 hover:opacity-100'
+                      }`}
+                    >
+                      <img src={img} alt={`${product.name} angle ${idx + 1}`} className="w-full h-full object-cover" />
+                    </button>
+                  ))}
+                  {product.video && (
+                    <button
+                      onClick={() => setIsPlayingVideo(true)}
+                      className={`relative flex-shrink-0 w-14 h-14 rounded-xl overflow-hidden border-2 flex flex-col items-center justify-center text-[10px] font-bold transition-all ${
+                        isPlayingVideo
+                          ? 'border-luxe-gold bg-luxe-black text-luxe-gold ring-2 ring-luxe-gold/30'
+                          : 'border-gray-200 bg-gray-100 text-gray-700 opacity-70 hover:opacity-100'
+                      }`}
+                    >
+                      <Play className="w-4 h-4 fill-current mb-0.5" />
+                      <span>Video</span>
+                    </button>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* Micro badges below image */}
@@ -155,7 +253,7 @@ export default function ProductModal({
                     {product.colors.map(color => (
                       <button
                         key={color}
-                        onClick={() => setSelectedColor(color)}
+                        onClick={() => handleColorChange(color)}
                         className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all border ${
                           selectedColor === color
                             ? 'border-luxe-gold bg-luxe-black text-luxe-gold'

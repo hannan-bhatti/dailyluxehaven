@@ -28,7 +28,7 @@ const SLIDES = [
     subtitle: "Precision Timepieces for Connoisseurs",
     description: "Complimentary worldwide express shipping & 5-year international guarantee on all gold mechanical timepieces.",
     badge: "Master Craftsmanship",
-    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1600&q=80",
+    image: "/products/watches/oyster-datejust-wrist.jpg",
     cta: "View Luxury Watches",
     categoryTarget: "watches"
   }

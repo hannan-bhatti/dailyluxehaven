@@ -10,57 +10,230 @@ export const PRODUCTS = [
   // WATCHES
   {
     id: "w-01",
-    name: "Royal Oak Automatic Chronograph",
+    name: "Oyster Perpetual Datejust Two-Tone Diamond Dial",
     category: "watches",
-    price: 3450,
-    originalPrice: 4200,
+    price: 3850,
+    originalPrice: 4500,
     rating: 4.9,
-    reviewsCount: 48,
+    reviewsCount: 58,
     isNew: true,
     isBestseller: true,
     isFlashSale: true,
-    flashSaleEndTime: "2026-08-15T23:59:59",
-    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80",
-    hoverImage: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
-    description: "Impeccably crafted with an automatic mechanical movement, sapphire crystal back, and hand-stitched alligator strap.",
-    colors: ["Rose Gold", "Obsidian Black", "Platinum Silver"],
-    sizes: ["39mm", "41mm", "45mm"],
+    flashSaleEndTime: "2026-09-30T23:59:59",
+    image: "/products/watches/oyster-datejust-wrist.jpg",
+    hoverImage: "/products/watches/oyster-datejust-box.jpg",
+    gallery: [
+      "/products/watches/oyster-datejust-wrist.jpg",
+      "/products/watches/oyster-datejust-box.jpg",
+      "/products/watches/oyster-datejust-dial.jpg",
+      "/products/watches/oyster-datejust-specs.jpg",
+      "/products/watches/oyster-datejust-jubilee.jpg",
+      "/products/watches/oyster-datejust-profile.jpg",
+      "/products/watches/oyster-datejust-caseback.jpg"
+    ],
+    description: "Iconic luxury two-tone timepiece blending 904L Oystersteel and 18k yellow gold. Showcases a fluted gold bezel, sunray jet-black dial accented with 10 brilliant-cut diamond hour markers, date aperture with Cyclops 2.5x magnification, screw-down twinlock crown, and the legendary 5-piece link Jubilee bracelet with concealed Crownclasp. Delivered with signature emerald green luxury box and official tag.",
+    colors: ["Two-Tone Yellow Gold & Steel"],
+    sizes: ["36mm", "41mm"],
     sizePrices: {
-      "39mm": 3450,
-      "41mm": 3850,
-      "45mm": 4350
+      "36mm": 3850,
+      "41mm": 4250
     },
     specs: {
-      "Movement": "Swiss Automatic Calibre DLH-98",
-      "Case Material": "Solid Steel & Rose Accent",
-      "Water Resistance": "100m / 330ft",
-      "Warranty": "5 Year International Guarantee"
+      "Movement": "Superlative Chronometer Automatic 3235",
+      "Case Material": "18K Yellow Gold & 904L Oystersteel",
+      "Bezel": "Signature Fluted 18K Yellow Gold Bezel",
+      "Dial": "Sunray Black with 10 Diamond Hour Markers",
+      "Bracelet": "Two-Tone Jubilee with Concealed Crownclasp",
+      "Crystal": "Scratch-Resistant Sapphire with Cyclops Lens",
+      "Water Resistance": "100m / 330ft Waterproof Twinlock Crown",
+      "Packaging": "Original Luxury Emerald Presentation Box & Tag"
     }
   },
   {
     id: "w-02",
-    name: "Astral Skeleton Sapphire Automatic",
+    name: "Oyster Perpetual Yacht-Master 18k Everose Gold Oysterflex",
     category: "watches",
-    price: 2890,
-    originalPrice: 3150,
-    rating: 4.8,
-    reviewsCount: 32,
+    price: 3490,
+    originalPrice: 3950,
+    rating: 4.9,
+    reviewsCount: 42,
     isNew: true,
-    isBestseller: false,
-    image: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
-    hoverImage: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
-    description: "An extraordinary skeletonized dial revealing high-precision Swiss movement housed inside a clear sapphire case with metallic accents.",
-    colors: ["Sapphire Silver", "Midnight Blue"],
-    sizes: ["40mm", "42mm", "44mm"],
+    isBestseller: true,
+    image: "/products/watches/oyster-yachtmaster-front.jpg",
+    hoverImage: "/products/watches/oyster-yachtmaster-profile.jpg",
+    gallery: [
+      "/products/watches/oyster-yachtmaster-front.jpg",
+      "/products/watches/oyster-yachtmaster-profile.jpg",
+      "/products/watches/oyster-yachtmaster-open.jpg",
+      "/products/watches/oyster-yachtmaster-caseback.jpg"
+    ],
+    description: "Commanding maritime luxury in solid 18k Everose Gold. Fitted with a matte black ceramic 60-minute rotatable bezel with polished raised numerals, deep black dial with Chromalight luminescent Mercedes hands, and the high-performance patented Oysterflex elastomer strap with solid rose gold Oysterlock safety clasp.",
+    colors: ["18k Everose Gold & Matte Black"],
+    sizes: ["40mm", "42mm"],
     sizePrices: {
-      "40mm": 2890,
-      "42mm": 3190,
-      "44mm": 3490
+      "40mm": 3490,
+      "42mm": 3890
     },
     specs: {
-      "Movement": "Open-Work Skeleton Automatic",
-      "Power Reserve": "72 Hours",
-      "Strap": "Integrated Italian Calfskin"
+      "Movement": "Superlative Chronometer Automatic Calibre 3235",
+      "Case": "Solid 18k Everose Gold Polished Finish",
+      "Bezel": "Matte Sandblasted Ceramic 60-Min Raised Numerals",
+      "Dial": "Chromalight High-Luminescence Dot/Baton Markers",
+      "Strap": "Oysterflex High-Density Elastomer with Cushion System",
+      "Clasp": "Solid 18k Rose Gold Oysterlock Safety Clasp",
+      "Water Resistance": "300m / 1000ft Professional Diver Rating"
+    }
+  },
+  {
+    id: "w-03",
+    name: "MIRA Rare Gem Trillion Crystal Watch & Botanical Bracelet Set",
+    category: "watches",
+    price: 790,
+    originalPrice: 1050,
+    rating: 4.9,
+    reviewsCount: 76,
+    isNew: true,
+    isBestseller: true,
+    image: "/products/watches/mira-gem-blue.jpg",
+    hoverImage: "/products/watches/mira-gem-boxes-poster.jpg",
+    gallery: [
+      "/products/watches/mira-gem-blue.jpg",
+      "/products/watches/mira-gem-red.jpg",
+      "/products/watches/mira-gem-green.jpg",
+      "/products/watches/mira-gem-pink.jpg",
+      "/products/watches/mira-gem-black.jpg",
+      "/products/watches/mira-gem-purple.jpg",
+      "/products/watches/mira-gem-boxes-poster.jpg",
+      "/products/watches/mira-gem-lifestyle-collaged.jpg"
+    ],
+    colorImages: {
+      "Sapphire Royal Blue": "/products/watches/mira-gem-blue.jpg",
+      "Ruby Velvet Red": "/products/watches/mira-gem-red.jpg",
+      "Emerald Imperial Green": "/products/watches/mira-gem-green.jpg",
+      "Rose Quartz Blossom": "/products/watches/mira-gem-pink.jpg",
+      "Obsidian Midnight Black": "/products/watches/mira-gem-black.jpg",
+      "Amethyst Royal Purple": "/products/watches/mira-gem-purple.jpg"
+    },
+    description: "An exquisite haute joaillerie timepiece accompanied by a matching crystal botanical vine bracelet. Features a sculptural triangular dial surrounded by four trillion-cut Austrian faceted gemstones in high-polish Rose Gold. Delivered in a custom matching velvet jewelry presentation box.",
+    colors: [
+      "Sapphire Royal Blue",
+      "Ruby Velvet Red",
+      "Emerald Imperial Green",
+      "Rose Quartz Blossom",
+      "Obsidian Midnight Black",
+      "Amethyst Royal Purple"
+    ],
+    sizes: ["Single Set (Watch + Bracelet)", "Deluxe Velvet Box Edition"],
+    sizePrices: {
+      "Single Set (Watch + Bracelet)": 790,
+      "Deluxe Velvet Box Edition": 920
+    },
+    specs: {
+      "Movement": "Japanese Quartz High-Accuracy Movement",
+      "Case & Band": "18k Rose Gold IP Plated Alloy",
+      "Stones": "Precision Faceted Austrian Trillion Crystals",
+      "Companion Jewelry": "Matching Gem Leaf Vine Chain Bracelet",
+      "Packaging": "Custom Monogram Velvet Box with Gold Latch"
+    }
+  },
+  {
+    id: "w-04",
+    name: "ULTRA 2.01\" Big Screen Smartwatch Bundle (7-in-1 Straps)",
+    category: "watches",
+    price: 390,
+    originalPrice: 550,
+    rating: 4.8,
+    reviewsCount: 114,
+    isNew: true,
+    isBestseller: true,
+    isFlashSale: true,
+    flashSaleEndTime: "2026-09-25T23:59:59",
+    image: "/products/watches/ultra-7in1-main.jpg",
+    hoverImage: "/products/watches/ultra-7in1-main.jpg",
+    gallery: [
+      "/products/watches/ultra-7in1-main.jpg"
+    ],
+    video: "/products/watches/ultra-7in1-video.mp4",
+    description: "Complete flagship smartwatch bundle featuring a massive 2.01\" HD bezel-less curved touchscreen. Includes magnetic wireless fast charger and 7 distinct interchangeable premium straps: Stainless steel link bracelet, Flame orange ocean sport strap, Desert canvas leather, Navy silicone, Ivory white, Ribbed black, and Pine green.",
+    colors: ["Titanium Silver Body + 7 Straps Included"],
+    sizes: ["2.01\" Big Screen Box Edition"],
+    sizePrices: {
+      "2.01\" Big Screen Box Edition": 390
+    },
+    specs: {
+      "Display": "2.01\" HD IPS Curved Touchscreen (320x385)",
+      "Straps Included": "7 Interchangeable Straps (Steel, Ocean, Leather, Silicone)",
+      "Connectivity": "Bluetooth 5.2 Calls, Notifications, NFC, Health Tracking",
+      "Battery & Charging": "Wireless Fast Magnetic Puck Charger (5-7 Days Battery)",
+      "Water Resistance": "IP68 Water & Dust Resistant",
+      "Packaging": "Vibrant Orange Luxury Magnetic Presentation Box"
+    }
+  },
+  {
+    id: "w-05",
+    name: "A58 Plus 2.02\" Smartwatch & Fine Jewelry 6-Piece Gift Set",
+    category: "watches",
+    price: 480,
+    originalPrice: 650,
+    rating: 4.9,
+    reviewsCount: 89,
+    isNew: true,
+    isBestseller: true,
+    image: "/products/watches/a58-plus-glamour.jpg",
+    hoverImage: "/products/watches/a58-plus-set-box.jpg",
+    gallery: [
+      "/products/watches/a58-plus-glamour.jpg",
+      "/products/watches/a58-plus-set-box.jpg"
+    ],
+    colors: ["Blush Pink Box Edition", "Obsidian Black Edition", "Champagne Gold Edition"],
+    colorImages: {
+      "Blush Pink Box Edition": "/products/watches/a58-plus-glamour.jpg",
+      "Obsidian Black Edition": "/products/watches/a58-plus-set-box.jpg",
+      "Champagne Gold Edition": "/products/watches/a58-plus-set-box.jpg"
+    },
+    description: "The ultimate luxury gift set for her. Unboxes a 2.02\" HD large screen smartwatch alongside a secondary 18k gold diamond-studded quartz watch, matching gold crystal tennis bracelet, delicate pendant necklace, crystal stud earrings, solitaire ring, and extra fashion straps.",
+    sizes: ["Complete 6-Piece Gift Set"],
+    sizePrices: {
+      "Complete 6-Piece Gift Set": 480
+    },
+    specs: {
+      "Smartwatch": "2.02\" Borderless HD Screen with Fitness & Call Support",
+      "Analog Watch": "Gold Crystal Bezel Quartz Analog Watch",
+      "Jewelry Inclusions": "Tennis Bangle, Pendant Necklace, Stud Earrings, Ring",
+      "Accessories": "Magnetic USB Charging Cable & Extra Band",
+      "Packaging": "Grand Double-Layer Pink Velvet Showcase Box"
+    }
+  },
+  {
+    id: "w-06",
+    name: "Handcrafted Vegan Leather Watch Showcase & Collector Box",
+    category: "watches",
+    price: 160,
+    originalPrice: 220,
+    rating: 4.9,
+    reviewsCount: 93,
+    isNew: false,
+    isBestseller: true,
+    image: "/products/watches/watch-box-12slot-top.jpg",
+    hoverImage: "/products/watches/watch-box-12slot-open.jpg",
+    gallery: [
+      "/products/watches/watch-box-12slot-top.jpg",
+      "/products/watches/watch-box-12slot-open.jpg",
+      "/products/watches/watch-box-6slot-closed.jpg",
+      "/products/watches/watch-box-6slot-open.jpg"
+    ],
+    colors: ["Executive Black & Suede Beige"],
+    sizes: ["6 Slots Compact Organizer", "12 Slots Showcase Vault"],
+    sizePrices: {
+      "6 Slots Compact Organizer": 160,
+      "12 Slots Showcase Vault": 240
+    },
+    specs: {
+      "Exterior": "Premium Scratch-Resistant Black Vegan Leather",
+      "Stitching": "Precision White Saddle Contrast Stitching",
+      "Interior": "Plush Anti-Tarnish Beige Suede Velvet Lining",
+      "Window": "Real Scratch-Proof Tempered Viewing Glass",
+      "Hardware": "Brushed Chrome Heavy-Duty Lock Clasp with Key"
     }
   },
 

@@ -36,7 +36,7 @@ export const CATEGORIES = [
     description: "Chronographs of distinction & Swiss luxury precision timepieces.",
     icon: "Watch",
     count: 18,
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+    image: "/products/watches/oyster-datejust-wrist.jpg",
     featured: true
   },
   {
