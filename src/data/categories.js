@@ -73,11 +73,11 @@ export const CATEGORIES = [
     id: "accessories",
     hubId: "fashion-beauty",
     name: "Accessories",
-    description: "Designer sunglasses, Italian leather belts & silk scarves.",
-    icon: "Glasses",
-    count: 22,
-    image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
-    featured: false
+    description: "ANC Bluetooth headphones, AirPods Pro 2 & portable RGB karaoke speakers.",
+    icon: "Headphones",
+    count: 16,
+    image: "/products/accessories/p9-headphones-display.jpg",
+    featured: true
   },
   {
     id: "purses",

@@ -402,49 +402,141 @@ export const PRODUCTS = [
   // ACCESSORIES
   {
     id: "a-01",
-    name: "Monogram Gold-Plated Aviator Sunglasses",
+    name: "P9 Wireless Bluetooth Headphones (with Box Packing)",
     category: "accessories",
-    price: 1800,
-    originalPrice: 2400,
-    rating: 4.8,
-    reviewsCount: 39,
+    price: 2200,
+    originalPrice: 3000,
+    rating: 4.9,
+    reviewsCount: 84,
     isNew: true,
     isBestseller: true,
-    image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
-    hoverImage: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80",
-    description: "Ultra-lightweight titanium frame with gold plating and gradient brown polarized UV400 lenses.",
-    colors: ["Gold & Brown Gradient", "Gold & Dark Smoke"],
-    sizes: ["Medium Fit (55mm)", "Large Fit (58mm)"],
-    sizePrices: {
-      "Medium Fit (55mm)": 1800,
-      "Large Fit (58mm)": 2100
+    isFlashSale: true,
+    flashSaleEndTime: "2026-09-28T23:59:59",
+    image: "/products/accessories/p9-headphones-display.jpg",
+    hoverImage: "/products/accessories/p9-headphones-colors.jpg",
+    gallery: [
+      "/products/accessories/p9-headphones-display.jpg",
+      "/products/accessories/p9-headphones-colors.jpg",
+      "/products/accessories/p9-headphones-overview.jpg",
+      "/products/accessories/p9-headphones-wear.jpg",
+      "/products/accessories/p9-headphones-ports.jpg",
+      "/products/accessories/p9-headphone-black.jpg",
+      "/products/accessories/p9-headphone-blue.jpg",
+      "/products/accessories/p9-headphone-green.jpg",
+      "/products/accessories/p9-headphone-silver.jpg"
+    ],
+    colors: ["Space Gray / Black", "Sky Blue", "Mint Green", "Platinum Silver / White"],
+    colorImages: {
+      "Space Gray / Black": "/products/accessories/p9-headphone-black.jpg",
+      "Sky Blue": "/products/accessories/p9-headphone-blue.jpg",
+      "Mint Green": "/products/accessories/p9-headphone-green.jpg",
+      "Platinum Silver / White": "/products/accessories/p9-headphone-silver.jpg"
     },
+    sizes: ["Standard Box Pack"],
+    sizePrices: {
+      "Standard Box Pack": 2200
+    },
+    description: "P9 Wireless Bluetooth Headphones with Box Packing. Connect On Both iOS & Android! Features Active Noise Cancellation (ANC), multi-mode playback (Bluetooth, MicroSD TF memory card, 3.5mm AUX cable), low latency high-amplitude sound, and ultra-comfortable ergonomic over-ear design.",
     specs: {
-      "Lens": "Polarized Category 3 UV400"
+      "Model": "P9 Wireless Bluetooth Over-Ear Headphone",
+      "Compatibility": "Connect On Both iOS & Android Devices",
+      "Playback Modes": "Bluetooth Wireless / TF Memory Card / 3.5mm Cable",
+      "Noise Control": "Active Noise Cancellation (ANC)",
+      "Design": "Ergonomic Over-Ear Cushioned Earcups",
+      "Packaging": "Original Retail Box Packing with Charging Cable"
     }
   },
   {
     id: "a-02",
-    name: "Hand-Rolled Italian Silk Square Scarf",
+    name: "AirPods Pro 2 with Lanyard Buzzer Edition (High Quality)",
     category: "accessories",
-    price: 1500,
-    originalPrice: 2000,
+    price: 2500,
+    originalPrice: 3400,
     rating: 4.9,
-    reviewsCount: 27,
-    isNew: false,
-    isBestseller: false,
-    image: "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=80",
-    hoverImage: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-    description: "Printed in Como style. Rich royal damask and gold chain art print on 100% heavy silk twill.",
-    colors: ["Gold & Royal Navy", "Gold & Ivory"],
-    sizes: ["Square (70cm x 70cm)", "Grand Square (90cm x 90cm)", "Maxi Twill (140cm x 140cm)"],
+    reviewsCount: 116,
+    isNew: true,
+    isBestseller: true,
+    image: "/products/accessories/airpods-pro2-unboxed.jpg",
+    hoverImage: "/products/accessories/airpods-pro2-case.jpg",
+    gallery: [
+      "/products/accessories/airpods-pro2-unboxed.jpg",
+      "/products/accessories/airpods-pro2-case.jpg"
+    ],
+    colors: ["Gloss White Edition"],
+    sizes: ["Complete Retail Box Pack"],
     sizePrices: {
-      "Square (70cm x 70cm)": 1500,
-      "Grand Square (90cm x 90cm)": 1900,
-      "Maxi Twill (140cm x 140cm)": 2400
+      "Complete Retail Box Pack": 2500
     },
+    description: "AirPods Pro 2 with Lanyard Buzzer Edition in High Quality Box Packing. Comes with braided Type C to Type C fast charging cable, speaker buzzer holes on case for audio locate alerts, side lanyard loop attachment, Active Noise Cancellation, touch volume swipe controls, and multiple silicone ear tips.",
     specs: {
-      "Material": "100% Silk Twill"
+      "Model": "AirPods Pro 2 Lanyard Buzzer Edition",
+      "Quality": "High Quality Retail Box Packing",
+      "Cable Included": "Type C to Type C Braided Fast Cable",
+      "Case Features": "Built-In Speaker Buzzer & Lanyard Loop",
+      "Sound & Touch": "Active Noise Cancellation & Swipe Controls",
+      "Inclusions": "Charging Case, Earbuds, Multi-Size Ear Tips, Type-C Cable"
+    }
+  },
+  {
+    id: "a-03",
+    name: "AirPods Pro 2 Matte Black with Buzzer & Clip Pouch",
+    category: "accessories",
+    price: 2800,
+    originalPrice: 3800,
+    rating: 5.0,
+    reviewsCount: 92,
+    isNew: true,
+    isBestseller: true,
+    image: "/products/accessories/airpods-pro2-black-pouch.jpg",
+    hoverImage: "/products/accessories/airpods-pro2-black-box.jpg",
+    gallery: [
+      "/products/accessories/airpods-pro2-black-pouch.jpg",
+      "/products/accessories/airpods-pro2-black-box.jpg",
+      "/products/accessories/airpods-pro2-black-case.jpg"
+    ],
+    colors: ["Stealth Matte Black + Clip Pouch"],
+    sizes: ["Full Box Pack with Pouch"],
+    sizePrices: {
+      "Full Box Pack with Pouch": 2800
+    },
+    description: "AirPods Pro 2 Black with Buzzer Edition in High Quality Box Packing (Premium Quality). Price with protective silicone pouch and carabiner clip: 2800/- Only. Includes Type C to Type C cable, 100% ANC, speaker buzzer case, and deluxe presentation packaging.",
+    specs: {
+      "Model": "AirPods Pro 2 Stealth Matte Black Edition",
+      "Quality": "Premium Quality (100% ANC Certified)",
+      "Protective Pouch": "Shockproof Black Silicone Case with Carabiner Hook",
+      "Cable Included": "Type C to Type C Fast Charging Cable",
+      "Case Features": "Speaker Buzzer Audio Alerts & Magnetic Lid",
+      "Packaging": "Deluxe Black Presentation Box Pack"
+    }
+  },
+  {
+    id: "a-04",
+    name: "GTS-1941 Portable RGB Speaker with Karaoke Microphone",
+    category: "accessories",
+    price: 2500,
+    originalPrice: 3500,
+    rating: 4.8,
+    reviewsCount: 67,
+    isNew: true,
+    isBestseller: true,
+    image: "/products/accessories/gts1941-speaker-mic.jpg",
+    hoverImage: "/products/accessories/gts1941-speaker-mic.jpg",
+    gallery: [
+      "/products/accessories/gts1941-speaker-mic.jpg"
+    ],
+    colors: ["Midnight Black & Dynamic RGB"],
+    sizes: ["Complete Speaker + Mic Box Pack"],
+    sizePrices: {
+      "Complete Speaker + Mic Box Pack": 2500
+    },
+    description: "GTS-1941 Speaker+Mic RGB Multipurpose Rechargeable Portable Speaker with One Mic (Box Packing). Features dynamic RGB party pulsing light grille, 3-inch big sound bass driver, sturdy carry handle, USB / TF / AUX playback, and handheld karaoke microphone.",
+    specs: {
+      "Model": "GTS-1941 Multipurpose RGB Speaker + Mic",
+      "Speaker Driver": "3-Inch Big Sound High-Bass Driver",
+      "Lighting": "Dynamic RGB Multi-Color Pulsing Grille",
+      "Microphone": "Handheld Karaoke Mic Included",
+      "Connectivity": "Bluetooth Wireless, USB Flash Drive, MicroSD Card, AUX",
+      "Packaging": "Original Retail Box Pack with Charging Cable"
     }
   },
 
