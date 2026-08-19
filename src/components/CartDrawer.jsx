@@ -50,7 +50,7 @@ export default function CartDrawer({
   const rawSubtotal = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
   const convertedSubtotal = rawSubtotal * currency.rate;
 
-  const FREE_SHIPPING_THRESHOLD = 150 * currency.rate;
+  const FREE_SHIPPING_THRESHOLD = 5000 * currency.rate;
   const progressToFreeShipping = Math.min(100, (convertedSubtotal / FREE_SHIPPING_THRESHOLD) * 100);
   const remainingForFreeShipping = Math.max(0, FREE_SHIPPING_THRESHOLD - convertedSubtotal);
 
@@ -299,15 +299,15 @@ export default function CartDrawer({
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Worldwide Shipping</span>
+                  <span>Standard Shipping</span>
                   <span className="font-bold text-emerald-600">
-                    {remainingForFreeShipping === 0 ? 'FREE' : `${currency.symbol}${Math.round(25 * currency.rate)}`}
+                    {remainingForFreeShipping === 0 ? 'FREE' : `${currency.symbol}${Math.round(250 * currency.rate)}`}
                   </span>
                 </div>
                 <div className="flex justify-between text-sm pt-2 border-t border-gray-200 font-extrabold text-luxe-black">
                   <span>Estimated Total</span>
                   <span className="text-luxe-gold text-lg">
-                    {currency.symbol}{Math.round(finalTotal + (remainingForFreeShipping === 0 ? 0 : 25 * currency.rate)).toLocaleString()}
+                    {currency.symbol}{Math.round(finalTotal + (remainingForFreeShipping === 0 ? 0 : 250 * currency.rate)).toLocaleString()}
                   </span>
                 </div>
               </div>
@@ -317,7 +317,7 @@ export default function CartDrawer({
                   onClose();
                   onProceedCheckout({
                     items: cartItems,
-                    total: finalTotal + (remainingForFreeShipping === 0 ? 0 : 25 * currency.rate),
+                    total: finalTotal + (remainingForFreeShipping === 0 ? 0 : 250 * currency.rate),
                     discount: discountAmount
                   });
                 }}

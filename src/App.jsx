@@ -18,7 +18,7 @@ export default function App() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [activeHubId, setActiveHubId] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
-  const [currency, setCurrency] = useState({ code: 'PKR', symbol: 'Rs. ', rate: 280 });
+  const [currency, setCurrency] = useState({ code: 'PKR', symbol: 'Rs. ', rate: 1 });
   
   // Cart & Wishlist state
   const [cartItems, setCartItems] = useState([]);

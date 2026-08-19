@@ -10,10 +10,10 @@ export const PRODUCTS = [
   // WATCHES
   {
     id: "w-01",
-    name: "Oyster Perpetual Datejust Two-Tone Diamond Dial",
+    name: "Rolex Date Just Plain Bezel Stone Dial (Gent's Collection)",
     category: "watches",
-    price: 3850,
-    originalPrice: 4500,
+    price: 4500,
+    originalPrice: 5500,
     rating: 4.9,
     reviewsCount: 58,
     isNew: true,
@@ -31,30 +31,30 @@ export const PRODUCTS = [
       "/products/watches/oyster-datejust-profile.jpg",
       "/products/watches/oyster-datejust-caseback.jpg"
     ],
-    description: "Iconic luxury two-tone timepiece blending 904L Oystersteel and 18k yellow gold. Showcases a fluted gold bezel, sunray jet-black dial accented with 10 brilliant-cut diamond hour markers, date aperture with Cyclops 2.5x magnification, screw-down twinlock crown, and the legendary 5-piece link Jubilee bracelet with concealed Crownclasp. Delivered with signature emerald green luxury box and official tag.",
+    description: "ROLEX DATE JUST PLAIN BEZEL STONE DIAL (Gent's Collection) - AA Grade Quality. Features Quartz Movement, 42MM size, stainless steel chain with brass case, date display window, and security power lock. The most demanding colourway, delivered in luxury presentation box.",
     colors: ["Two-Tone Yellow Gold & Steel"],
-    sizes: ["36mm", "41mm"],
+    sizes: ["42MM Standard"],
     sizePrices: {
-      "36mm": 3850,
-      "41mm": 4250
+      "42MM Standard": 4500
     },
     specs: {
-      "Movement": "Superlative Chronometer Automatic 3235",
-      "Case Material": "18K Yellow Gold & 904L Oystersteel",
-      "Bezel": "Signature Fluted 18K Yellow Gold Bezel",
-      "Dial": "Sunray Black with 10 Diamond Hour Markers",
-      "Bracelet": "Two-Tone Jubilee with Concealed Crownclasp",
-      "Crystal": "Scratch-Resistant Sapphire with Cyclops Lens",
-      "Water Resistance": "100m / 330ft Waterproof Twinlock Crown",
-      "Packaging": "Original Luxury Emerald Presentation Box & Tag"
+      "Collection": "Gent's Collection",
+      "Model": "Rolex Date Just Plain Bezel",
+      "Dial": "Stone Dial with Diamond Markers & Date Window",
+      "Movement": "High Precision Quartz Movement",
+      "Quality": "AA Grade Quality",
+      "Size": "42MM Size",
+      "Case & Chain": "Stainless Steel Chain & Brass Case with Date",
+      "Lock": "Security Power Lock",
+      "Packaging": "Original Luxury Presentation Box & Tag"
     }
   },
   {
     id: "w-02",
-    name: "Oyster Perpetual Yacht-Master 18k Everose Gold Oysterflex",
+    name: "Rolex Yacht-Master Date Just with Date (Heavy Master Lock)",
     category: "watches",
-    price: 3490,
-    originalPrice: 3950,
+    price: 3000,
+    originalPrice: 3800,
     rating: 4.9,
     reviewsCount: 42,
     isNew: true,
@@ -67,29 +67,29 @@ export const PRODUCTS = [
       "/products/watches/oyster-yachtmaster-open.jpg",
       "/products/watches/oyster-yachtmaster-caseback.jpg"
     ],
-    description: "Commanding maritime luxury in solid 18k Everose Gold. Fitted with a matte black ceramic 60-minute rotatable bezel with polished raised numerals, deep black dial with Chromalight luminescent Mercedes hands, and the high-performance patented Oysterflex elastomer strap with solid rose gold Oysterlock safety clasp.",
+    description: "Rolex Yacht-Master Date Just with Date. Premium Quality craftsmanship featuring a working steel rotating bezel, heavy master lock clasp, and high-performance black Oysterflex-style elastomer strap.",
     colors: ["18k Everose Gold & Matte Black"],
-    sizes: ["40mm", "42mm"],
+    sizes: ["40MM Standard", "42MM Executive"],
     sizePrices: {
-      "40mm": 3490,
-      "42mm": 3890
+      "40MM Standard": 3000,
+      "42MM Executive": 3300
     },
     specs: {
-      "Movement": "Superlative Chronometer Automatic Calibre 3235",
-      "Case": "Solid 18k Everose Gold Polished Finish",
-      "Bezel": "Matte Sandblasted Ceramic 60-Min Raised Numerals",
-      "Dial": "Chromalight High-Luminescence Dot/Baton Markers",
-      "Strap": "Oysterflex High-Density Elastomer with Cushion System",
-      "Clasp": "Solid 18k Rose Gold Oysterlock Safety Clasp",
-      "Water Resistance": "300m / 1000ft Professional Diver Rating"
+      "Model": "Rolex Yacht-Master Date Just with Date",
+      "Quality": "Premium Quality",
+      "Bezel": "Working Steel Rotating Bezel",
+      "Lock & Clasp": "Heavy Master Lock Security Clasp",
+      "Dial": "Black Dial with Date & Luminescent Hands",
+      "Strap": "High-Density Oysterflex Style Elastomer Strap",
+      "Movement": "High Precision Quartz / Chronometer Movement"
     }
   },
   {
     id: "w-03",
-    name: "MIRA Rare Gem Trillion Crystal Watch & Botanical Bracelet Set",
+    name: "MIRA Fancy Stone Watch & Trending Tulip Hand Bracelets Set",
     category: "watches",
-    price: 790,
-    originalPrice: 1050,
+    price: 2500,
+    originalPrice: 3200,
     rating: 4.9,
     reviewsCount: 76,
     isNew: true,
@@ -114,7 +114,7 @@ export const PRODUCTS = [
       "Obsidian Midnight Black": "/products/watches/mira-gem-black.jpg",
       "Amethyst Royal Purple": "/products/watches/mira-gem-purple.jpg"
     },
-    description: "An exquisite haute joaillerie timepiece accompanied by a matching crystal botanical vine bracelet. Features a sculptural triangular dial surrounded by four trillion-cut Austrian faceted gemstones in high-polish Rose Gold. Delivered in a custom matching velvet jewelry presentation box.",
+    description: "Gift Set For Her: Fancy beautiful MIRA design stone watch plus trending tulip hand bracelets for her. Best quality guaranteed. Features a sculptural trillion-cut gemstone case in rose gold with matching tulip crystal vine hand chain.",
     colors: [
       "Sapphire Royal Blue",
       "Ruby Velvet Red",
@@ -123,25 +123,25 @@ export const PRODUCTS = [
       "Obsidian Midnight Black",
       "Amethyst Royal Purple"
     ],
-    sizes: ["Single Set (Watch + Bracelet)", "Deluxe Velvet Box Edition"],
+    sizes: ["Single Set (Watch + Tulip Bracelet)", "Deluxe Velvet Box Edition"],
     sizePrices: {
-      "Single Set (Watch + Bracelet)": 790,
-      "Deluxe Velvet Box Edition": 920
+      "Single Set (Watch + Tulip Bracelet)": 2500,
+      "Deluxe Velvet Box Edition": 2800
     },
     specs: {
-      "Movement": "Japanese Quartz High-Accuracy Movement",
-      "Case & Band": "18k Rose Gold IP Plated Alloy",
-      "Stones": "Precision Faceted Austrian Trillion Crystals",
-      "Companion Jewelry": "Matching Gem Leaf Vine Chain Bracelet",
+      "Set Inclusions": "MIRA Design Stone Watch + Trending Tulip Hand Bracelet",
+      "Quality": "Best Quality Guaranteed",
+      "Design": "Sculptural Trillion-Cut Gemstones in Rose Gold Finish",
+      "Bracelet": "Matching Crystal Tulip / Leaf Hand Chain",
       "Packaging": "Custom Monogram Velvet Box with Gold Latch"
     }
   },
   {
     id: "w-04",
-    name: "ULTRA 2.01\" Big Screen Smartwatch Bundle (7-in-1 Straps)",
+    name: "7/1 in ULTRA Model Smart Watch with Charger (Gift Box Pack)",
     category: "watches",
-    price: 390,
-    originalPrice: 550,
+    price: 3000,
+    originalPrice: 4000,
     rating: 4.8,
     reviewsCount: 114,
     isNew: true,
@@ -154,27 +154,27 @@ export const PRODUCTS = [
       "/products/watches/ultra-7in1-main.jpg"
     ],
     video: "/products/watches/ultra-7in1-video.mp4",
-    description: "Complete flagship smartwatch bundle featuring a massive 2.01\" HD bezel-less curved touchscreen. Includes magnetic wireless fast charger and 7 distinct interchangeable premium straps: Stainless steel link bracelet, Flame orange ocean sport strap, Desert canvas leather, Navy silicone, Ivory white, Ribbed black, and Pine green.",
+    description: "7/1 in ULTRA Model Smart Watch with Charger (Gift Box Pack). Features massive 2.01\" big screen HD touchscreen, magnetic fast wireless charger, and 7 interchangeable straps (Stainless steel link, Flame orange ocean sport, Desert canvas leather, Navy silicone, Ivory white, Ribbed black, and Pine green).",
     colors: ["Titanium Silver Body + 7 Straps Included"],
-    sizes: ["2.01\" Big Screen Box Edition"],
+    sizes: ["2.01\" Big Screen Gift Box Pack"],
     sizePrices: {
-      "2.01\" Big Screen Box Edition": 390
+      "2.01\" Big Screen Gift Box Pack": 3000
     },
     specs: {
-      "Display": "2.01\" HD IPS Curved Touchscreen (320x385)",
+      "Model": "7-in-1 ULTRA Smart Watch Edition",
+      "Display": "2.01\" Big Screen HD IPS Curved Touchscreen",
       "Straps Included": "7 Interchangeable Straps (Steel, Ocean, Leather, Silicone)",
-      "Connectivity": "Bluetooth 5.2 Calls, Notifications, NFC, Health Tracking",
-      "Battery & Charging": "Wireless Fast Magnetic Puck Charger (5-7 Days Battery)",
-      "Water Resistance": "IP68 Water & Dust Resistant",
-      "Packaging": "Vibrant Orange Luxury Magnetic Presentation Box"
+      "Charger": "Magnetic Fast Wireless Charger Included",
+      "Features": "Bluetooth Calling, Notifications, Health & Fitness Tracking",
+      "Packaging": "Vibrant Deluxe Gift Box Pack"
     }
   },
   {
     id: "w-05",
-    name: "A58 Plus 2.02\" Smartwatch & Fine Jewelry 6-Piece Gift Set",
+    name: "A58 PLUS Ladies Gift Set Model (The Most Demanding Model)",
     category: "watches",
-    price: 480,
-    originalPrice: 650,
+    price: 4000,
+    originalPrice: 5000,
     rating: 4.9,
     reviewsCount: 89,
     isNew: true,
@@ -191,25 +191,26 @@ export const PRODUCTS = [
       "Obsidian Black Edition": "/products/watches/a58-plus-set-box.jpg",
       "Champagne Gold Edition": "/products/watches/a58-plus-set-box.jpg"
     },
-    description: "The ultimate luxury gift set for her. Unboxes a 2.02\" HD large screen smartwatch alongside a secondary 18k gold diamond-studded quartz watch, matching gold crystal tennis bracelet, delicate pendant necklace, crystal stud earrings, solitaire ring, and extra fashion straps.",
-    sizes: ["Complete 6-Piece Gift Set"],
+    description: "A58 PLUS Ladies Gift Set Model (The Most Demanding Model). Complete 6-piece luxury gift box featuring a 2.02\" HD large screen smartwatch, secondary 18k gold diamond-studded quartz watch, crystal tennis bracelet, pendant necklace, earrings, ring, and extra bands.",
+    sizes: ["Complete Ladies Gift Box Set"],
     sizePrices: {
-      "Complete 6-Piece Gift Set": 480
+      "Complete Ladies Gift Box Set": 4000
     },
     specs: {
-      "Smartwatch": "2.02\" Borderless HD Screen with Fitness & Call Support",
+      "Model": "A58 Plus Ladies Gift Set Model",
+      "Edition": "The Most Demanding Model",
+      "Smartwatch": "2.02\" Borderless HD Large Screen with Calling & Fitness",
       "Analog Watch": "Gold Crystal Bezel Quartz Analog Watch",
       "Jewelry Inclusions": "Tennis Bangle, Pendant Necklace, Stud Earrings, Ring",
-      "Accessories": "Magnetic USB Charging Cable & Extra Band",
       "Packaging": "Grand Double-Layer Pink Velvet Showcase Box"
     }
   },
   {
     id: "w-06",
-    name: "Handcrafted Vegan Leather Watch Showcase & Collector Box",
+    name: "PU Watch Leather Storage Box / Display Box (High Quality)",
     category: "watches",
-    price: 160,
-    originalPrice: 220,
+    price: 2700,
+    originalPrice: 3500,
     rating: 4.9,
     reviewsCount: 93,
     isNew: false,
@@ -223,14 +224,17 @@ export const PRODUCTS = [
       "/products/watches/watch-box-6slot-open.jpg"
     ],
     colors: ["Executive Black & Suede Beige"],
-    sizes: ["6 Slots Compact Organizer", "12 Slots Showcase Vault"],
+    sizes: ["6 Slots High Quality", "12 Slots High Quality"],
     sizePrices: {
-      "6 Slots Compact Organizer": 160,
-      "12 Slots Showcase Vault": 240
+      "6 Slots High Quality": 2700,
+      "12 Slots High Quality": 3500
     },
     specs: {
-      "Exterior": "Premium Scratch-Resistant Black Vegan Leather",
-      "Stitching": "Precision White Saddle Contrast Stitching",
+      "Product": "PU Watch Leather Storage Box / Display Box",
+      "Quality": "High Quality Construction",
+      "6 Slots Price": "Rs 2,700/- Only",
+      "12 Slots Price": "Rs 3,500/- Only",
+      "Exterior": "Premium Scratch-Resistant Black PU Leather",
       "Interior": "Plush Anti-Tarnish Beige Suede Velvet Lining",
       "Window": "Real Scratch-Proof Tempered Viewing Glass",
       "Hardware": "Brushed Chrome Heavy-Duty Lock Clasp with Key"
@@ -242,8 +246,8 @@ export const PRODUCTS = [
     id: "c-01",
     name: "Luxe Champagne Silk Trench Coat",
     category: "clothes",
-    price: 890,
-    originalPrice: 1100,
+    price: 4500,
+    originalPrice: 5800,
     rating: 4.9,
     reviewsCount: 64,
     isNew: true,
@@ -254,11 +258,11 @@ export const PRODUCTS = [
     colors: ["Champagne", "Onyx Black", "Ivory Cream"],
     sizes: ["XS", "S", "M", "L", "XL"],
     sizePrices: {
-      "XS": 820,
-      "S": 890,
-      "M": 950,
-      "L": 1020,
-      "XL": 1090
+      "XS": 4200,
+      "S": 4500,
+      "M": 4800,
+      "L": 5100,
+      "XL": 5500
     },
     specs: {
       "Material": "100% Mulberry Silk (22 Momme)",
@@ -270,8 +274,8 @@ export const PRODUCTS = [
     id: "c-02",
     name: "Velvet Midnight Blazer with Royal Embroidery",
     category: "clothes",
-    price: 750,
-    originalPrice: 890,
+    price: 3800,
+    originalPrice: 4600,
     rating: 4.7,
     reviewsCount: 41,
     isNew: false,
@@ -282,10 +286,10 @@ export const PRODUCTS = [
     colors: ["Midnight Navy", "Emerald Green"],
     sizes: ["S", "M", "L", "XL"],
     sizePrices: {
-      "S": 750,
-      "M": 790,
-      "L": 840,
-      "XL": 890
+      "S": 3800,
+      "M": 4000,
+      "L": 4200,
+      "XL": 4500
     },
     specs: {
       "Material": "Cotton Velvet",
@@ -298,8 +302,8 @@ export const PRODUCTS = [
     id: "h-01",
     name: "Imperial Rimmed Crystal Cut Glass Set",
     category: "house-hold",
-    price: 320,
-    originalPrice: 400,
+    price: 2900,
+    originalPrice: 3600,
     rating: 4.9,
     reviewsCount: 52,
     isNew: true,
@@ -310,9 +314,9 @@ export const PRODUCTS = [
     colors: ["Gold & Clear", "Amber Gold"],
     sizes: ["4-Piece Set", "7-Piece Set", "12-Piece Set"],
     sizePrices: {
-      "4-Piece Set": 320,
-      "7-Piece Set": 420,
-      "12-Piece Set": 680
+      "4-Piece Set": 2900,
+      "7-Piece Set": 3600,
+      "12-Piece Set": 4900
     },
     specs: {
       "Craftsmanship": "Handblown Artisan Crystal"
@@ -322,8 +326,8 @@ export const PRODUCTS = [
     id: "h-02",
     name: "French Jacquard Gold Table Linen Set",
     category: "house-hold",
-    price: 290,
-    originalPrice: 360,
+    price: 2400,
+    originalPrice: 3000,
     rating: 4.8,
     reviewsCount: 21,
     isNew: true,
@@ -334,9 +338,9 @@ export const PRODUCTS = [
     colors: ["Gold Damask", "Cream White"],
     sizes: ["6-Seater (180x240cm)", "8-Seater (180x300cm)", "12-Seater (180x380cm)"],
     sizePrices: {
-      "6-Seater (180x240cm)": 240,
-      "8-Seater (180x300cm)": 290,
-      "12-Seater (180x380cm)": 380
+      "6-Seater (180x240cm)": 2400,
+      "8-Seater (180x300cm)": 2900,
+      "12-Seater (180x380cm)": 3800
     },
     specs: {
       "Material": "80% Egyptian Cotton, 20% Lurex Gold"
@@ -348,8 +352,8 @@ export const PRODUCTS = [
     id: "j-01",
     name: "Crown Royale 18k Gold Diamond Pendant",
     category: "jewellery",
-    price: 1950,
-    originalPrice: 2400,
+    price: 3200,
+    originalPrice: 4200,
     rating: 5.0,
     reviewsCount: 88,
     isNew: true,
@@ -358,40 +362,40 @@ export const PRODUCTS = [
     flashSaleEndTime: "2026-08-16T18:00:00",
     image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80",
-    description: "Directly inspired by the Daily Luxe Haven emblem. Handcrafted 18k solid gold crown encrusted with round brilliant diamonds.",
+    description: "Directly inspired by the Daily Luxe Haven emblem. Handcrafted 18k gold plated crown encrusted with round brilliant crystals.",
     colors: ["Yellow Gold", "Rose Gold", "White Gold"],
     sizes: ["16 inch chain", "18 inch chain", "20 inch chain"],
     sizePrices: {
-      "16 inch chain": 1750,
-      "18 inch chain": 1950,
-      "20 inch chain": 2150
+      "16 inch chain": 2900,
+      "18 inch chain": 3200,
+      "20 inch chain": 3500
     },
     specs: {
-      "Gold Purity": "18K Solid Gold (750 hallmark)",
-      "Diamond Carat": "1.25 ctw VS1 Color E"
+      "Purity": "18K Gold Plated Brass",
+      "Stones": "Brilliant Grade A Cubic Zirconia"
     }
   },
   {
     id: "j-02",
     name: "Eternal Emerald Cut Gold Drop Earrings",
     category: "jewellery",
-    price: 1480,
-    originalPrice: 1750,
+    price: 2800,
+    originalPrice: 3500,
     rating: 4.9,
     reviewsCount: 41,
     isNew: false,
     isBestseller: true,
     image: "https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80",
-    description: "Vibrant Colombian emerald-cut center stones encircled by micro-pave diamond halos set on delicate 18k gold drops.",
+    description: "Vibrant emerald-cut center stones encircled by micro-pave halos set on delicate gold drops.",
     colors: ["Emerald Gold"],
     sizes: ["Standard Drop (2.4 ct)", "Grand Royal Drop (4.0 ct)"],
     sizePrices: {
-      "Standard Drop (2.4 ct)": 1480,
-      "Grand Royal Drop (4.0 ct)": 2180
+      "Standard Drop (2.4 ct)": 2800,
+      "Grand Royal Drop (4.0 ct)": 3400
     },
     specs: {
-      "Gemstone": "Natural Colombian Emerald"
+      "Gemstone": "Faceted Emerald Crystal"
     }
   },
 
@@ -400,20 +404,20 @@ export const PRODUCTS = [
     id: "a-01",
     name: "Monogram Gold-Plated Aviator Sunglasses",
     category: "accessories",
-    price: 360,
-    originalPrice: 450,
+    price: 1800,
+    originalPrice: 2400,
     rating: 4.8,
     reviewsCount: 39,
     isNew: true,
     isBestseller: true,
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80",
-    description: "Ultra-lightweight titanium frame with 24k gold plating and gradient brown polarized UV400 lenses.",
+    description: "Ultra-lightweight titanium frame with gold plating and gradient brown polarized UV400 lenses.",
     colors: ["Gold & Brown Gradient", "Gold & Dark Smoke"],
     sizes: ["Medium Fit (55mm)", "Large Fit (58mm)"],
     sizePrices: {
-      "Medium Fit (55mm)": 360,
-      "Large Fit (58mm)": 395
+      "Medium Fit (55mm)": 1800,
+      "Large Fit (58mm)": 2100
     },
     specs: {
       "Lens": "Polarized Category 3 UV400"
@@ -423,21 +427,21 @@ export const PRODUCTS = [
     id: "a-02",
     name: "Hand-Rolled Italian Silk Square Scarf",
     category: "accessories",
-    price: 240,
-    originalPrice: 290,
+    price: 1500,
+    originalPrice: 2000,
     rating: 4.9,
     reviewsCount: 27,
     isNew: false,
     isBestseller: false,
     image: "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-    description: "Printed in Como, Italy. Rich royal damask and gold chain art print on 100% heavy silk twill.",
+    description: "Printed in Como style. Rich royal damask and gold chain art print on 100% heavy silk twill.",
     colors: ["Gold & Royal Navy", "Gold & Ivory"],
     sizes: ["Square (70cm x 70cm)", "Grand Square (90cm x 90cm)", "Maxi Twill (140cm x 140cm)"],
     sizePrices: {
-      "Square (70cm x 70cm)": 180,
-      "Grand Square (90cm x 90cm)": 240,
-      "Maxi Twill (140cm x 140cm)": 340
+      "Square (70cm x 70cm)": 1500,
+      "Grand Square (90cm x 90cm)": 1900,
+      "Maxi Twill (140cm x 140cm)": 2400
     },
     specs: {
       "Material": "100% Silk Twill"
@@ -449,44 +453,44 @@ export const PRODUCTS = [
     id: "p-01",
     name: "The Haven Monogram Leather Flap Bag",
     category: "purses",
-    price: 1250,
-    originalPrice: 1550,
+    price: 3800,
+    originalPrice: 4800,
     rating: 4.9,
     reviewsCount: 76,
     isNew: true,
     isBestseller: true,
     image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80",
-    description: "Structured calfskin leather handbag adorned with custom gold turn-lock closure.",
+    description: "Structured vegan leather handbag adorned with custom gold turn-lock closure.",
     colors: ["Luxe Gold-Black", "Cream Ivory", "Emerald Green"],
     sizes: ["Mini (18cm)", "Medium (24cm)", "Grand Tote (32cm)"],
     sizePrices: {
-      "Mini (18cm)": 980,
-      "Medium (24cm)": 1250,
-      "Grand Tote (32cm)": 1580
+      "Mini (18cm)": 3200,
+      "Medium (24cm)": 3800,
+      "Grand Tote (32cm)": 4500
     },
     specs: {
-      "Leather": "Full Grain Italian Calfskin"
+      "Leather": "Premium Structured Vegan Leather"
     }
   },
   {
     id: "p-02",
     name: "Satin Evening Clutch with Crystal Crown Lock",
     category: "purses",
-    price: 680,
-    originalPrice: 820,
+    price: 2600,
+    originalPrice: 3400,
     rating: 4.8,
     reviewsCount: 33,
     isNew: false,
     isBestseller: false,
     image: "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-    description: "Lustrous heavy silk satin frame with removable snake chain and sparkling crown clasp.",
+    description: "Lustrous heavy silk satin frame with removable chain and sparkling crown clasp.",
     colors: ["Champagne Gold", "Obsidian Black"],
     sizes: ["Compact (20cm)", "Deluxe (25cm)"],
     sizePrices: {
-      "Compact (20cm)": 680,
-      "Deluxe (25cm)": 820
+      "Compact (20cm)": 2600,
+      "Deluxe (25cm)": 3200
     },
     specs: {
       "Closure": "Crystal Crown Clasp"
@@ -498,50 +502,50 @@ export const PRODUCTS = [
     id: "nd-01",
     name: "Victoria Gold Trim Mulberry Silk Nightgown",
     category: "night-dress",
-    price: 340,
-    originalPrice: 420,
+    price: 2500,
+    originalPrice: 3200,
     rating: 4.9,
     reviewsCount: 45,
     isNew: true,
     isBestseller: true,
     image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80",
-    description: "100% Grade 6A Mulberry silk full-length nightgown featuring french eyelash lace trims.",
+    description: "Mulberry silk full-length nightgown featuring french eyelash lace trims.",
     colors: ["Pearl White", "Rose Champagne", "Midnight Black"],
     sizes: ["XS", "S", "M", "L", "XL"],
     sizePrices: {
-      "XS": 310,
-      "S": 340,
-      "M": 370,
-      "L": 400,
-      "XL": 440
+      "XS": 2300,
+      "S": 2500,
+      "M": 2700,
+      "L": 2900,
+      "XL": 3200
     },
     specs: {
-      "Silk Weight": "25 Momme Pure Silk"
+      "Silk Weight": "Pure Silk Satin Finish"
     }
   },
   {
     id: "nd-02",
     name: "Royal Kimono Silk Robe with Hand-Cut Lace",
     category: "night-dress",
-    price: 480,
-    originalPrice: 580,
+    price: 3200,
+    originalPrice: 4000,
     rating: 4.8,
     reviewsCount: 28,
     isNew: false,
     isBestseller: false,
     image: "https://images.unsplash.com/photo-1508742345712-0656a285ac27?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
-    description: "Floor-sweeping silk kimono with wide bell sleeves, hand-cut French Chantilly lace hem.",
+    description: "Floor-sweeping silk kimono with wide bell sleeves, hand-cut French lace hem.",
     colors: ["Golden Ivory", "Obsidian Black"],
     sizes: ["S/M", "L/XL", "Custom Tailored"],
     sizePrices: {
-      "S/M": 480,
-      "L/XL": 530,
-      "Custom Tailored": 650
+      "S/M": 3200,
+      "L/XL": 3600,
+      "Custom Tailored": 4200
     },
     specs: {
-      "Fabric": "100% Heavyweight Silk"
+      "Fabric": "Heavyweight Silk Satin"
     }
   },
 
@@ -550,8 +554,8 @@ export const PRODUCTS = [
     id: "ha-01",
     name: "Imperial Gold Sequined Velvet Abaya Set",
     category: "hijabs-abaya",
-    price: 640,
-    originalPrice: 790,
+    price: 5200,
+    originalPrice: 6500,
     rating: 5.0,
     reviewsCount: 94,
     isNew: true,
@@ -564,11 +568,11 @@ export const PRODUCTS = [
     colors: ["Black & Gold", "Emerald & Gold", "Burgundy & Gold"],
     sizes: ["52", "54", "56", "58", "60"],
     sizePrices: {
-      "52": 580,
-      "54": 610,
-      "56": 640,
-      "58": 670,
-      "60": 700
+      "52": 4800,
+      "54": 5000,
+      "56": 5200,
+      "58": 5400,
+      "60": 5600
     },
     specs: {
       "Fabric": "Premium Plush Velvet & Chiffon"
@@ -578,8 +582,8 @@ export const PRODUCTS = [
     id: "ha-02",
     name: "Luxury Silk Chiffon Hijab with Gold Lace Rim",
     category: "hijabs-abaya",
-    price: 110,
-    originalPrice: 150,
+    price: 1200,
+    originalPrice: 1600,
     rating: 4.9,
     reviewsCount: 63,
     isNew: false,
@@ -590,8 +594,8 @@ export const PRODUCTS = [
     colors: ["Champagne Gold", "Nude Mocha", "Classic Black"],
     sizes: ["Standard (180cm x 70cm)", "Maxi (200cm x 80cm)"],
     sizePrices: {
-      "Standard (180cm x 70cm)": 110,
-      "Maxi (200cm x 80cm)": 145
+      "Standard (180cm x 70cm)": 1200,
+      "Maxi (200cm x 80cm)": 1500
     },
     specs: {
       "Material": "Silk Blend Chiffon"
@@ -603,32 +607,32 @@ export const PRODUCTS = [
     id: "cs-01",
     name: "Luxe 24k Gold Infused Age-Defying Elixir",
     category: "cosmetics",
-    price: 260,
-    originalPrice: 320,
+    price: 2400,
+    originalPrice: 3000,
     rating: 4.9,
     reviewsCount: 112,
     isNew: true,
     isBestseller: true,
     image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80",
-    description: "Concentrated facial oil with pure 24K gold flakes, rare Damascus rose extract, and Hyaluronic Acid.",
+    description: "Concentrated facial oil with pure gold leaf flakes, Damascus rose extract, and Hyaluronic Acid.",
     colors: ["Pure Gold Drops"],
     sizes: ["30ml / 1.0 fl oz", "50ml / 1.7 fl oz", "100ml / 3.4 fl oz"],
     sizePrices: {
-      "30ml / 1.0 fl oz": 180,
-      "50ml / 1.7 fl oz": 260,
-      "100ml / 3.4 fl oz": 420
+      "30ml / 1.0 fl oz": 1800,
+      "50ml / 1.7 fl oz": 2400,
+      "100ml / 3.4 fl oz": 3600
     },
     specs: {
-      "Active Ingredients": "24k Pure Gold Flakes, Squalane, Rosehip Seed Oil"
+      "Active Ingredients": "Gold Flakes, Squalane, Rosehip Seed Oil"
     }
   },
   {
     id: "cs-02",
     name: "Royal Oud & Amber Extrait de Parfum",
     category: "cosmetics",
-    price: 390,
-    originalPrice: 480,
+    price: 3200,
+    originalPrice: 4000,
     rating: 5.0,
     reviewsCount: 84,
     isNew: false,
@@ -639,8 +643,8 @@ export const PRODUCTS = [
     colors: ["Amber Gold"],
     sizes: ["50ml / 1.7 fl oz", "100ml / 3.4 fl oz"],
     sizePrices: {
-      "50ml / 1.7 fl oz": 270,
-      "100ml / 3.4 fl oz": 390
+      "50ml / 1.7 fl oz": 2500,
+      "100ml / 3.4 fl oz": 3200
     },
     specs: {
       "Fragrance Type": "Extrait de Parfum (30% Concentration)"
@@ -652,23 +656,23 @@ export const PRODUCTS = [
     id: "k-01",
     name: "Heirloom Velvet Baby Pram Coat Set",
     category: "kids-items",
-    price: 210,
-    originalPrice: 270,
+    price: 2600,
+    originalPrice: 3200,
     rating: 4.9,
     reviewsCount: 38,
     isNew: true,
     isBestseller: false,
     image: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=800&q=80",
-    description: "Soft plush cotton velvet pram coat lined in organic pima cotton with matching bonnet.",
+    description: "Soft plush cotton velvet pram coat lined in organic cotton with matching bonnet.",
     colors: ["Cream Ivory", "Dusty Gold", "Royal Navy"],
     sizes: ["0-3M", "3-6M", "6-12M", "12-18M", "2-3Y"],
     sizePrices: {
-      "0-3M": 180,
-      "3-6M": 195,
-      "6-12M": 210,
-      "12-18M": 225,
-      "2-3Y": 245
+      "0-3M": 2200,
+      "3-6M": 2400,
+      "6-12M": 2600,
+      "12-18M": 2800,
+      "2-3Y": 3000
     },
     specs: {
       "Material": "100% Cotton Velvet"
@@ -678,23 +682,23 @@ export const PRODUCTS = [
     id: "k-02",
     name: "Handcrafted Gold Wooden Rocking Horse",
     category: "kids-items",
-    price: 490,
-    originalPrice: 620,
+    price: 4200,
+    originalPrice: 5200,
     rating: 4.8,
     reviewsCount: 19,
     isNew: false,
     isBestseller: true,
     image: "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80",
-    description: "Carved from solid beechwood with non-toxic gold leaf detailing and genuine leather saddle.",
+    description: "Carved from solid wood with non-toxic gold leaf detailing and genuine leather saddle.",
     colors: ["Natural Wood & Gold"],
     sizes: ["Junior Edition", "Classic Heirloom Size"],
     sizePrices: {
-      "Junior Edition": 390,
-      "Classic Heirloom Size": 490
+      "Junior Edition": 3500,
+      "Classic Heirloom Size": 4200
     },
     specs: {
-      "Material": "Solid Beechwood & Italian Leather"
+      "Material": "Solid Hardwood & Leather"
     }
   },
 
@@ -703,8 +707,8 @@ export const PRODUCTS = [
     id: "g-01",
     name: "Aura Sound 24k Gold Wireless Headphones",
     category: "gadgets",
-    price: 790,
-    originalPrice: 950,
+    price: 3500,
+    originalPrice: 4500,
     rating: 4.9,
     reviewsCount: 71,
     isNew: true,
@@ -713,12 +717,12 @@ export const PRODUCTS = [
     flashSaleEndTime: "2026-08-16T10:00:00",
     image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80",
-    description: "Active Noise Cancellation studio headphones with real 24k gold leaf earcups.",
+    description: "Active Noise Cancellation studio headphones with gold trim earcups and Hi-Res wireless audio.",
     colors: ["24k Gold & Black", "Gold & Pearl White"],
     sizes: ["Standard Wireless", "Audiophile Pro Bundle"],
     sizePrices: {
-      "Standard Wireless": 790,
-      "Audiophile Pro Bundle": 980
+      "Standard Wireless": 3500,
+      "Audiophile Pro Bundle": 4200
     },
     specs: {
       "Battery Life": "40 Hours Playback"
@@ -728,20 +732,20 @@ export const PRODUCTS = [
     id: "g-02",
     name: "Luxe Charge Gold Marble Wireless Station",
     category: "gadgets",
-    price: 180,
-    originalPrice: 220,
+    price: 1900,
+    originalPrice: 2500,
     rating: 4.8,
     reviewsCount: 46,
     isNew: false,
     isBestseller: false,
     image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
-    description: "Carrara marble fast wireless charging dock with brushed gold brass trims.",
+    description: "Marble texture fast wireless charging dock with brushed gold trims.",
     colors: ["Gold Brass & White Marble", "Gold Brass & Black Marble"],
     sizes: ["2-in-1 Dual Dock", "3-in-1 Triple Dock"],
     sizePrices: {
-      "2-in-1 Dual Dock": 140,
-      "3-in-1 Triple Dock": 180
+      "2-in-1 Dual Dock": 1600,
+      "3-in-1 Triple Dock": 1900
     },
     specs: {
       "Fast Charging": "15W MagSafe"
@@ -753,8 +757,8 @@ export const PRODUCTS = [
     id: "hd-01",
     name: "Spherical Brass & Marble Table Lamp",
     category: "home-decorators",
-    price: 520,
-    originalPrice: 650,
+    price: 3200,
+    originalPrice: 4000,
     rating: 4.9,
     reviewsCount: 57,
     isNew: true,
@@ -765,9 +769,9 @@ export const PRODUCTS = [
     colors: ["Brushed Brass Gold"],
     sizes: ["Medium (H: 42cm)", "Large (H: 52cm)", "Grand Arc (H: 68cm)"],
     sizePrices: {
-      "Medium (H: 42cm)": 420,
-      "Large (H: 52cm)": 520,
-      "Grand Arc (H: 68cm)": 680
+      "Medium (H: 42cm)": 2800,
+      "Large (H: 52cm)": 3200,
+      "Grand Arc (H: 68cm)": 3900
     },
     specs: {
       "Lighting": "Dimmable Warm LED"
@@ -777,21 +781,21 @@ export const PRODUCTS = [
     id: "hd-02",
     name: "Artisan Gold Leaf Sculptural Bowl",
     category: "home-decorators",
-    price: 340,
-    originalPrice: 410,
+    price: 2400,
+    originalPrice: 3000,
     rating: 4.8,
     reviewsCount: 33,
     isNew: false,
     isBestseller: false,
     image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
     hoverImage: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80",
-    description: "Cast aluminum centerpiece bowl textured with authentic 24k gold leaf finishing.",
+    description: "Centerpiece bowl textured with authentic gold leaf finishing.",
     colors: ["Burnished Gold"],
     sizes: ["Medium (30cm)", "Large (38cm)", "Statement Bowl (48cm)"],
     sizePrices: {
-      "Medium (30cm)": 270,
-      "Large (38cm)": 340,
-      "Statement Bowl (48cm)": 450
+      "Medium (30cm)": 2000,
+      "Large (38cm)": 2400,
+      "Statement Bowl (48cm)": 3100
     },
     specs: {
       "Craft": "Hand-hammered & Gilding"

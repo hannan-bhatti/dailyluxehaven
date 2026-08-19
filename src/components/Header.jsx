@@ -4,11 +4,11 @@ import { CATEGORIES, HUBS } from '../data/categories';
 import { PRODUCTS } from '../data/products';
 
 const CURRENCIES = [
-  { code: 'PKR', symbol: 'Rs. ', rate: 280 },
-  { code: 'USD', symbol: '$', rate: 1 },
-  { code: 'EUR', symbol: '€', rate: 0.92 },
-  { code: 'GBP', symbol: '£', rate: 0.79 },
-  { code: 'AED', symbol: 'د.إ', rate: 3.67 },
+  { code: 'PKR', symbol: 'Rs. ', rate: 1 },
+  { code: 'USD', symbol: '$', rate: 0.00357 },
+  { code: 'EUR', symbol: '€', rate: 0.00328 },
+  { code: 'GBP', symbol: '£', rate: 0.00282 },
+  { code: 'AED', symbol: 'د.إ', rate: 0.0131 },
 ];
 
 const POPULAR_TAGS = [
