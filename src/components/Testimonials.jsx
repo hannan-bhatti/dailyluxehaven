@@ -55,33 +55,33 @@ export default function Testimonials() {
           {REVIEWS.map((rev) => (
             <div
               key={rev.id}
-              className="bg-white border border-[#EAE2D5] rounded-3xl p-8 shadow-sm hover:shadow-luxe-hover transition-all duration-300 relative flex flex-col justify-between"
+              className="bg-white border border-[#EAE2D5] rounded-3xl p-7 sm:p-8 shadow-sm hover:shadow-luxe-hover transition-all duration-300 relative flex flex-col justify-between"
             >
-              <Quote className="w-10 h-10 text-luxe-gold/20 absolute top-6 right-6" />
+              <Quote className="w-10 h-10 text-luxe-gold/15 absolute top-7 right-7 pointer-events-none" />
 
               <div>
-                <div className="flex items-center gap-1 text-amber-400 mb-4">
+                <div className="flex items-center gap-1.5 text-amber-400 mb-5">
                   {[...Array(rev.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400" />
+                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                   ))}
                 </div>
 
-                <p className="text-sm text-gray-700 font-serif italic mb-6 leading-relaxed">
+                <p className="text-[15px] sm:text-base text-gray-800 font-sans font-normal mb-6 leading-relaxed">
                   "{rev.text}"
                 </p>
               </div>
 
-              <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
+              <div className="flex items-center gap-4 pt-5 border-t border-gray-100">
                 <img
                   src={rev.avatar}
                   alt={rev.name}
-                  className="w-12 h-12 rounded-full object-cover border-2 border-luxe-gold"
+                  className="w-12 h-12 rounded-full object-cover ring-2 ring-luxe-gold/40 shadow-sm"
                 />
                 <div>
-                  <h4 className="font-serif text-base font-bold text-luxe-black">
+                  <h4 className="font-serif text-lg font-bold text-luxe-black leading-snug">
                     {rev.name}
                   </h4>
-                  <p className="text-[11px] text-luxe-gold font-semibold">
+                  <p className="text-xs text-luxe-gold font-semibold tracking-wide">
                     {rev.role} • {rev.location}
                   </p>
                 </div>
