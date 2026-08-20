@@ -300,50 +300,158 @@ export const PRODUCTS = [
   // HOUSE HOLD
   {
     id: "h-01",
-    name: "Imperial Rimmed Crystal Cut Glass Set",
+    name: "5pcs Stainless Steel Bowl Set with Sealed Lids",
     category: "house-hold",
-    price: 2900,
-    originalPrice: 3600,
+    price: 2500,
+    originalPrice: 3200,
     rating: 4.9,
-    reviewsCount: 52,
+    reviewsCount: 86,
     isNew: true,
     isBestseller: true,
-    image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80",
-    hoverImage: "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80",
-    description: "Handblown Lead-Free Crystal decanter and matching tumblers with hand-dipped electroplated metallic rims.",
-    colors: ["Gold & Clear", "Amber Gold"],
-    sizes: ["4-Piece Set", "7-Piece Set", "12-Piece Set"],
+    image: "/products/household/stainless-bowls-stack.jpg",
+    hoverImage: "/products/household/stainless-bowls-box.jpg",
+    gallery: [
+      "/products/household/stainless-bowls-stack.jpg",
+      "/products/household/stainless-bowls-box.jpg"
+    ],
+    colors: ["Stainless Steel Mirror Finish"],
+    sizes: ["5-Piece Set (10cm, 12cm, 14cm, 16cm, 18cm)"],
     sizePrices: {
-      "4-Piece Set": 2900,
-      "7-Piece Set": 3600,
-      "12-Piece Set": 4900
+      "5-Piece Set (10cm, 12cm, 14cm, 16cm, 18cm)": 2500
     },
+    description: "5pcs Stainless Steel Bowl Set Premium Quality with Lid. Perfect for kitchen, refrigerator food storage, and mixing sealed bowls. Includes 5 graduated nesting bowls: 10cm, 12cm, 14cm, 16cm, and 18cm in Protect Fresh Box retail packaging.",
     specs: {
-      "Craftsmanship": "Handblown Artisan Crystal"
+      "Set Inclusions": "5 Stainless Steel Bowls + 5 Airtight Sealing Lids",
+      "Graduated Sizes": "10cm, 12cm, 14cm, 16cm, 18cm",
+      "Material": "Food-Grade Rust-Proof Stainless Steel",
+      "Lids": "Airtight Silicone Fresh-Lock Seal Lids",
+      "Usage": "Fridge Storage, Mixing, Baking & Serving",
+      "Packaging": "Protect Fresh Box Retail Color Packaging"
     }
   },
   {
     id: "h-02",
-    name: "French Jacquard Gold Table Linen Set",
+    name: "RAF Multifunction Electric Masala & Coffee Grinder (300W)",
     category: "house-hold",
-    price: 2400,
-    originalPrice: 3000,
-    rating: 4.8,
-    reviewsCount: 21,
+    price: 2600,
+    originalPrice: 3500,
+    rating: 4.9,
+    reviewsCount: 104,
     isNew: true,
-    isBestseller: false,
-    image: "https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=800&q=80",
-    hoverImage: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80",
-    description: "Woven in Lyon with golden metallic yarn interwoven into soft Egyptian cotton damask.",
-    colors: ["Gold Damask", "Cream White"],
-    sizes: ["6-Seater (180x240cm)", "8-Seater (180x300cm)", "12-Seater (180x380cm)"],
+    isBestseller: true,
+    isFlashSale: true,
+    flashSaleEndTime: "2026-09-29T23:59:59",
+    image: "/products/household/electric-grinder-box.jpg",
+    hoverImage: "/products/household/electric-grinder-device.jpg",
+    gallery: [
+      "/products/household/electric-grinder-box.jpg",
+      "/products/household/electric-grinder-device.jpg"
+    ],
+    colors: ["Stainless Steel Silver & Black"],
+    sizes: ["Standard 300W Grinder (R.7113)"],
     sizePrices: {
-      "6-Seater (180x240cm)": 2400,
-      "8-Seater (180x300cm)": 2900,
-      "12-Seater (180x380cm)": 3800
+      "Standard 300W Grinder (R.7113)": 2600
     },
+    description: "Multifunction Electric Masala Grinder RAF (Model R.7113). Powerful 300W high-torque motor with double stainless steel razor-sharp grinding blades. Fast, effortless one-touch grinding for dry spices, masala, coffee beans, black pepper, nuts, and pulses.",
     specs: {
-      "Material": "80% Egyptian Cotton, 20% Lurex Gold"
+      "Model": "RAF Multifunctional Grinder R.7113",
+      "Power": "300W High Speed Pure Copper Motor",
+      "Blades": "Dual Stainless Steel High-Velocity Blades",
+      "Lid": "Transparent Safety Lock Top View Lid",
+      "Capacity": "200g - 300g Grinding Bowl Capacity",
+      "Operation": "One-Touch Push Button Control"
+    }
+  },
+  {
+    id: "h-03",
+    name: "FALARI 2-Liter Stainless Steel Hand Push Chopper",
+    category: "house-hold",
+    price: 2500,
+    originalPrice: 3200,
+    rating: 4.8,
+    reviewsCount: 78,
+    isNew: true,
+    isBestseller: true,
+    image: "/products/household/hand-push-chopper.jpg",
+    hoverImage: "/products/household/hand-push-chopper.jpg",
+    gallery: [
+      "/products/household/hand-push-chopper.jpg"
+    ],
+    colors: ["SUS304 Steel & Crimson Red Handle"],
+    sizes: ["2-Liter Large Family Capacity"],
+    sizePrices: {
+      "2-Liter Large Family Capacity": 2500
+    },
+    description: "Stainless Steel Hand Push Chopper 2LTR Manual Food Processor (FALARI SUS304). High-capacity stainless steel bowl with multi-tier high-grade rotary cutting blades. Effortlessly chops onions, vegetables, herbs, meat, garlic, and nuts with simple downward hand push motion.",
+    specs: {
+      "Capacity": "2 Liters Extra Large Food Bowl",
+      "Bowl Material": "SUS304 Heavy-Duty Stainless Steel",
+      "Blade System": "Triple Tier S-Shaped Rotary Blades",
+      "Mechanism": "Smooth Hand Push Plunger Action",
+      "Base": "Non-Slip Anti-Skid Rubber Base Ring"
+    }
+  },
+  {
+    id: "h-04",
+    name: "USB ARC Rechargeable Metal Lighter (360° Flexible Neck)",
+    category: "house-hold",
+    price: 1250,
+    originalPrice: 1800,
+    rating: 4.9,
+    reviewsCount: 92,
+    isNew: true,
+    isBestseller: true,
+    image: "/products/household/electric-lighter-main.jpg",
+    hoverImage: "/products/household/electric-lighter-main.jpg",
+    gallery: [
+      "/products/household/electric-lighter-main.jpg"
+    ],
+    video: "/products/household/electric-lighter-video.mp4",
+    colors: ["Metallic Gunmetal Black"],
+    sizes: ["Full Card Pack + Type-C Cable"],
+    sizePrices: {
+      "Full Card Pack + Type-C Cable": 1250
+    },
+    description: "USB ARC Rechargeable Metal Keychain Lighter with Card Packing and Type-C Charging Cable. 100% flameless, windproof plasma electric arc ignition with 360-degree bendable flexible neck. Perfect for gas stoves, deep candle wicks, BBQ, and outdoor fire lighting.",
+    specs: {
+      "Ignition Technology": "Flameless Windproof USB Plasma Arc",
+      "Neck": "360° Flexible Long Gooseneck Rotation",
+      "Charging": "USB Type-C Fast Charging (Cable Included)",
+      "Battery Indicator": "LED Power Level Status Lights",
+      "Safety": "Child-Safety Sliding Lock Switch",
+      "Packaging": "Original Retail Card Blister Pack"
+    }
+  },
+  {
+    id: "h-05",
+    name: "Punch-Free Humanoid Wall Storage Shelf Rack (Kitchen & Bathroom)",
+    category: "house-hold",
+    price: 1700,
+    originalPrice: 2400,
+    rating: 4.8,
+    reviewsCount: 65,
+    isNew: true,
+    isBestseller: true,
+    image: "/products/household/wall-hanging-rack-bathroom.jpg",
+    hoverImage: "/products/household/wall-hanging-rack-cosmetics.jpg",
+    gallery: [
+      "/products/household/wall-hanging-rack-bathroom.jpg",
+      "/products/household/wall-hanging-rack-cosmetics.jpg"
+    ],
+    video: "/products/household/wall-hanging-rack-video.mp4",
+    colors: ["Alpine White Humanoid Edition"],
+    sizes: ["Single Shelf (with Strong Adhesives)", "Set of 2 Shelves"],
+    sizePrices: {
+      "Single Shelf (with Strong Adhesives)": 1700,
+      "Set of 2 Shelves": 3000
+    },
+    description: "Wall Hanging Rack, Bathroom Wall Shelf, Punching-Free Bathroom Storage Rack, Villain Wall Hanging Rack for Kitchen & Bathroom. Heavy-duty self-adhesive stickers hold toiletries, cosmetics, spice jars, and bottles securely without drilling or wall damage.",
+    specs: {
+      "Design": "Creative Humanoid / 'Villain' Character Wall Shelf",
+      "Mounting": "100% Punch-Free No-Drill Strong Adhesive Wall Pads",
+      "Material": "Durable Eco-Friendly Thick ABS Plastic",
+      "Application": "Bathroom Tiles, Kitchen Splashbacks, Vanity Mirrors",
+      "Load Capacity": "Holds Up To 5kg of Toiletries & Bottles"
     }
   },
 

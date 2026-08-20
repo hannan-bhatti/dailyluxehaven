@@ -53,11 +53,11 @@ export const CATEGORIES = [
     id: "house-hold",
     hubId: "home-living",
     name: "House hold",
-    description: "Opulent dining sets, crystal glassware & premium living essentials.",
+    description: "Stainless steel food storage sets, electric masala grinders, hand choppers & smart shelves.",
     icon: "Home",
-    count: 24,
-    image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80",
-    featured: false
+    count: 18,
+    image: "/products/household/stainless-bowls-stack.jpg",
+    featured: true
   },
   {
     id: "jewellery",
