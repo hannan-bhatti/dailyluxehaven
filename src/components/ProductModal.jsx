@@ -93,6 +93,8 @@ export default function ProductModal({
                     src={product.video}
                     controls
                     autoPlay
+                    muted
+                    playsInline
                     loop
                     className="w-full h-full object-cover"
                   />
