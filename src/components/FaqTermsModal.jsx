@@ -8,7 +8,7 @@ const FAQS = [
   },
   {
     q: "What payment methods do you accept?",
-    a: "We accept Cash on Delivery (COD) across Pakistan, Bank Transfers, Visa/Mastercard credit/debit cards, EasyPaisa, and JazzCash. For international deliveries, credit card and wire transfers are supported."
+    a: "We accept EasyPaisa (03144362979 - Ahmed Raza), JazzCash (03144362979 - Ahmed Raza), and Visa/Mastercard/PayPak credit and debit cards with 256-bit SSL vault encryption."
   },
   {
     q: "How long does shipping take?",
