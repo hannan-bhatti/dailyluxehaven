@@ -133,10 +133,10 @@ export const CATEGORIES = [
     id: "gadgets",
     hubId: "home-living",
     name: "Gadgets",
-    description: "High-fidelity audio, gold-accented electronics & smart luxury.",
-    icon: "Headphones",
-    count: 16,
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
+    description: "Smart LED touch temperature display flasks & modern gadgets.",
+    icon: "Sparkles",
+    count: 12,
+    image: "/products/gadgets/smart-temperature-bottle.jpg",
     featured: true
   },
   {

@@ -905,50 +905,35 @@ export const PRODUCTS = [
   // GADGETS
   {
     id: "g-01",
-    name: "Aura Sound 24k Gold Wireless Headphones",
+    name: "Smart Vacuum Insulated Temperature Bottle (500ml LED Touch Screen)",
     category: "gadgets",
-    price: 3500,
-    originalPrice: 4500,
+    price: 2500,
+    originalPrice: 3200,
     rating: 4.9,
-    reviewsCount: 71,
+    reviewsCount: 64,
     isNew: true,
     isBestseller: true,
     isFlashSale: true,
-    flashSaleEndTime: "2026-08-16T10:00:00",
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
-    hoverImage: "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80",
-    description: "Active Noise Cancellation studio headphones with gold trim earcups and Hi-Res wireless audio.",
-    colors: ["24k Gold & Black", "Gold & Pearl White"],
-    sizes: ["Standard Wireless", "Audiophile Pro Bundle"],
+    flashSaleEndTime: "2026-09-30T23:59:59",
+    image: "/products/gadgets/smart-temperature-bottle.jpg",
+    hoverImage: "/products/gadgets/temperature-bottle-display.jpg",
+    gallery: [
+      "/products/gadgets/smart-temperature-bottle.jpg",
+      "/products/gadgets/temperature-bottle-display.jpg"
+    ],
+    colors: ["Stealth Matte Black"],
+    sizes: ["500ml Smart Flask"],
     sizePrices: {
-      "Standard Wireless": 3500,
-      "Audiophile Pro Bundle": 4200
+      "500ml Smart Flask": 2500
     },
+    description: "Temperature Bottle — Smart Vacuum Insulated Water Bottle 500ml Stainless Steel Flask with LED Temperature Display Touch Screen. 100% leak-proof hot and cold thermos flask for office, gym, travel, and outdoor use. Real-time digital temperature indicator with sensitive touch lid.",
     specs: {
-      "Battery Life": "40 Hours Playback"
-    }
-  },
-  {
-    id: "g-02",
-    name: "Luxe Charge Gold Marble Wireless Station",
-    category: "gadgets",
-    price: 1900,
-    originalPrice: 2500,
-    rating: 4.8,
-    reviewsCount: 46,
-    isNew: false,
-    isBestseller: false,
-    image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=800&q=80",
-    hoverImage: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
-    description: "Marble texture fast wireless charging dock with brushed gold trims.",
-    colors: ["Gold Brass & White Marble", "Gold Brass & Black Marble"],
-    sizes: ["2-in-1 Dual Dock", "3-in-1 Triple Dock"],
-    sizePrices: {
-      "2-in-1 Dual Dock": 1600,
-      "3-in-1 Triple Dock": 1900
-    },
-    specs: {
-      "Fast Charging": "15W MagSafe"
+      "Display": "Digital LED Touch Screen Real-Time Temperature Sensor",
+      "Capacity": "500ml Portable Travel Size",
+      "Insulation": "Double-Wall Vacuum Insulation (Hot & Cold 12-24 Hours)",
+      "Material": "Food-Grade SUS304 Rust-Proof Stainless Steel",
+      "Features": "100% Leak-Proof Lid, BPA-Free, Built-In Long Life Battery",
+      "Usage": "Office, Gym, Outdoor, Car, Hiking & Travel"
     }
   },
 
