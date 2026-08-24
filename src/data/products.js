@@ -936,6 +936,42 @@ export const PRODUCTS = [
       "Usage": "Office, Gym, Outdoor, Car, Hiking & Travel"
     }
   },
+  {
+    id: "g-02",
+    name: "Interactive Moving Ear Bunny Earmuffs (Warm Winter Plush)",
+    category: "gadgets",
+    price: 2000,
+    originalPrice: 2600,
+    rating: 4.9,
+    reviewsCount: 88,
+    isNew: true,
+    isBestseller: true,
+    image: "/products/gadgets/bunny-earmuffs-pink.webp",
+    hoverImage: "/products/gadgets/bunny-earmuffs-gray.jpg",
+    gallery: [
+      "/products/gadgets/bunny-earmuffs-pink.webp",
+      "/products/gadgets/bunny-earmuffs-gray.jpg",
+      "/products/gadgets/bunny-earmuffs-colors.jpg"
+    ],
+    colors: ["Blush Pink", "Powder Gray", "Multi-Color Assortment"],
+    colorImages: {
+      "Blush Pink": "/products/gadgets/bunny-earmuffs-pink.webp",
+      "Powder Gray": "/products/gadgets/bunny-earmuffs-gray.jpg",
+      "Multi-Color Assortment": "/products/gadgets/bunny-earmuffs-colors.jpg"
+    },
+    sizes: ["One Size Fits All (Kids & Adults)"],
+    sizePrices: {
+      "One Size Fits All (Kids & Adults)": 2000
+    },
+    description: "Ear Muffs for Winter for Kids | Moving Ear Bunny Earmuffs for Girls, Boys, Women. Features fun built-in air pump squeeze paws that make the bunny ears jump and flap up and down! Super soft, cozy, and warm plush fabric with cute character embroidery.",
+    specs: {
+      "Mechanism": "Dual Air-Pump Squeeze Paws (Flapping Moving Ears)",
+      "Material": "Ultra-Soft Thermal Plush Faux Fur",
+      "Fit": "Flexible Comfort Headband (Kids, Teens & Adults)",
+      "Warmth": "Windproof Full Ear Thermal Protection",
+      "Special Feature": "Interactive Moving Ears, No Batteries or Charging Needed"
+    }
+  },
 
   // HOME DECORATORS
   {
