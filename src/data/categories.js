@@ -93,10 +93,10 @@ export const CATEGORIES = [
     id: "home-decorations",
     hubId: "home-living",
     name: "Home Decorations",
-    description: "Sculptural lamps, artisan candles, marble bowls, gilded mirrors & luxury decor accents.",
+    description: "Luxury acrylic & wooden geometric wall frames and modern room decor.",
     icon: "Lamp",
-    count: 18,
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+    count: 14,
+    image: "/products/home-decorators/acrylic-wooden-frames-console.jpg",
     featured: true
   },
   {

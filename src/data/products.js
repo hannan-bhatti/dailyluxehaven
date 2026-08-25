@@ -924,26 +924,36 @@ export const PRODUCTS = [
   // HOME DECORATIONS
   {
     id: "hd-01",
-    name: "Spherical Brass & Marble Table Lamp",
+    name: "Luxury Acrylic & Wooden Geometric Wall Frames (Pack of 3)",
     category: "home-decorations",
-    price: 3200,
-    originalPrice: 4000,
+    price: 1500,
+    originalPrice: 2200,
     rating: 4.9,
-    reviewsCount: 57,
+    reviewsCount: 52,
     isNew: true,
     isBestseller: true,
-    image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80",
-    hoverImage: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
-    description: "Architectural luminaire with hand-brushed gold brass arc base and handblown frosted glass opal globe.",
-    colors: ["Brushed Brass Gold"],
-    sizes: ["Medium (H: 42cm)", "Large (H: 52cm)", "Grand Arc (H: 68cm)"],
+    isFlashSale: true,
+    flashSaleEndTime: "2026-09-30T23:59:59",
+    image: "/products/home-decorators/acrylic-wooden-frames-console.jpg",
+    hoverImage: "/products/home-decorators/acrylic-wooden-frames-bedroom.jpg",
+    gallery: [
+      "/products/home-decorators/acrylic-wooden-frames-console.jpg",
+      "/products/home-decorators/acrylic-wooden-frames-bedroom.jpg",
+      "/products/home-decorators/acrylic-wooden-frames-detail.jpg"
+    ],
+    colors: ["Matte Black"],
+    sizes: ["Pack of 3 Frames (6-Inches Each)"],
     sizePrices: {
-      "Medium (H: 42cm)": 2800,
-      "Large (H: 52cm)": 3200,
-      "Grand Arc (H: 68cm)": 3900
+      "Pack of 3 Frames (6-Inches Each)": 1500
     },
+    description: "Luxury Acrylic & Wooden Wall Frames — Upgrade your wall with modern elegance. Premium wooden material with mirror-finish acrylic center. Elegant geometric nested diamond silhouette in matte black. Perfect for bedroom walls, living room decor, dressing area, and gifting.",
     specs: {
-      "Lighting": "Dimmable Warm LED"
+      "Set Inclusions": "3 Modern Geometric Wall Art Frames",
+      "Each Frame Size": "6 Inches (15.2 cm) Square Diamond",
+      "Material": "High-Density Engineered Wood with Reflective Acrylic",
+      "Color Finish": "Matte Jet Black",
+      "Ideal Rooms": "Bedroom Walls, Living Room Decor, Dressing Area & Gifting",
+      "Mounting": "Lightweight Easy Wall Mount / Adhesive Mounting"
     }
   },
   {
