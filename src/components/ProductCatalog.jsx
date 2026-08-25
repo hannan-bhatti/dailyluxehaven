@@ -67,7 +67,7 @@ export default function ProductCatalog({
           <p className="text-sm text-gray-500 font-light">
             {activeCategoryObj
               ? activeCategoryObj.description
-              : "Discover Swiss timepieces, 18k gold diamond jewellery, designer purses, pure silk abayas, high-tech gadgets, and opulent home decorators."}
+              : "Discover Swiss timepieces, 18k gold diamond jewellery, designer purses, pure silk abayas, high-tech gadgets, and opulent home decorations."}
           </p>
         </div>
 

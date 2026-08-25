@@ -16,7 +16,7 @@ const SLIDES = [
     id: 2,
     title: "EMERALD & GOLD ELEGANCE",
     subtitle: "Modest Abayas & Silk Couture",
-    description: "Discover bespoke velvet abayas, silk chiffon hijabs, and signature Mulberry silk nightwear crafted for royalty.",
+    description: "Discover bespoke velvet abayas, silk chiffon hijabs, and signature modest couture crafted for royalty.",
     badge: "Haute Couture",
     image: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1600&q=80",
     cta: "Shop Abayas & Silk",

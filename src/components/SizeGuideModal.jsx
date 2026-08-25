@@ -42,7 +42,7 @@ export default function SizeGuideModal({ isOpen, onClose, initialCategory = 'aba
             }`}
           >
             <Sparkles className="w-4 h-4" />
-            <span>Abayas & Nightdresses</span>
+            <span>Abayas & Modest Wear</span>
           </button>
 
           <button
@@ -89,7 +89,7 @@ export default function SizeGuideModal({ isOpen, onClose, initialCategory = 'aba
         {/* Modal Body */}
         <div className="p-6 sm:p-8 overflow-y-auto flex-1 space-y-6 text-sm text-gray-700">
           
-          {/* ABAYAS & NIGHTDRESSES */}
+          {/* ABAYAS & MODEST WEAR */}
           {activeTab === 'abayas' && (
             <div className="space-y-4">
               <div className="bg-[#FAF8F5] border border-[#E2D9CC] p-4 rounded-2xl flex items-start gap-3">

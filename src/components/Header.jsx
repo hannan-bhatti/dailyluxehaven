@@ -15,7 +15,7 @@ const POPULAR_TAGS = [
   "Diamond Jewellery",
   "Velvet Abaya",
   "Swiss Watch",
-  "Mulberry Silk",
+  "Home Decorations",
   "Wireless Headphones",
   "Crystal Glassware",
   "Designer Purse",
@@ -40,7 +40,7 @@ export default function Header({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeMegaHub, setActiveMegaHub] = useState(null);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
-  const [recentSearches, setRecentSearches] = useState(["Classic Watch", "Velvet Abaya", "Silk Robe"]);
+  const [recentSearches, setRecentSearches] = useState(["Classic Watch", "Velvet Abaya", "Home Decorations"]);
 
   // Predictive Auto-Complete Matching Products
   const searchResults = useMemo(() => {
@@ -335,8 +335,8 @@ export default function Header({
               All Luxe Collections
             </button>
 
-            {/* Direct Links for Header Categories (excluding Home decorators) */}
-            {CATEGORIES.filter(cat => cat.id !== 'home-decorators').map(cat => (
+            {/* Direct Links for Header Categories */}
+            {CATEGORIES.map(cat => (
               <button
                 key={cat.id}
                 onClick={() => onSelectCategory(cat.id)}
@@ -374,7 +374,7 @@ export default function Header({
               >
                 All Products
               </button>
-              {CATEGORIES.filter(cat => cat.id !== 'home-decorators').map(cat => (
+              {CATEGORIES.map(cat => (
                 <button
                   key={cat.id}
                   onClick={() => { onSelectCategory(cat.id); setMobileMenuOpen(false); }}

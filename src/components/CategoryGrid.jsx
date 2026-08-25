@@ -19,7 +19,7 @@ export default function CategoryGrid({ activeCategory, onSelectCategory }) {
               <span>Curated Departments</span>
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-luxe-black">
-              Explore Our 12 Luxe Collections
+              Explore Our {CATEGORIES.length} Luxe Collections
             </h2>
           </div>
           <p className="text-xs text-gray-500 max-w-md mt-2 md:mt-0 font-light">

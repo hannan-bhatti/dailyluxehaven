@@ -23,17 +23,17 @@ export default function CartDrawer({
     const cartCategories = cartItems.map(item => item.category);
     let targetCategories = [];
 
-    // Rule 1: If cart has night-dress, clothes, or hijabs-abaya -> suggest jewellery, cosmetics, accessories, purses
-    if (cartCategories.some(c => ['night-dress', 'clothes', 'hijabs-abaya', 'nightdress'].includes(c))) {
+    // Rule 1: If cart has clothes or hijabs-abaya -> suggest jewellery, cosmetics, accessories, purses
+    if (cartCategories.some(c => ['clothes', 'hijabs-abaya'].includes(c))) {
       targetCategories = ['jewellery', 'cosmetics', 'accessories', 'purses'];
     } 
     // Rule 2: If cart has watches -> suggest accessories, jewellery, purses
     else if (cartCategories.some(c => c === 'watches')) {
       targetCategories = ['accessories', 'jewellery', 'purses'];
     } 
-    // Rule 3: If cart has house-hold or gadgets -> suggest gadgets, house-hold, home-decorators
-    else if (cartCategories.some(c => ['house-hold', 'home-decorators', 'gadgets'].includes(c))) {
-      targetCategories = ['gadgets', 'house-hold', 'home-decorators'];
+    // Rule 3: If cart has house-hold, home-decorations or gadgets -> suggest gadgets, house-hold, home-decorations
+    else if (cartCategories.some(c => ['house-hold', 'home-decorations', 'gadgets'].includes(c))) {
+      targetCategories = ['gadgets', 'house-hold', 'home-decorations'];
     } 
     // Rule 4: Default recommendations
     else {

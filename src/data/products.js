@@ -697,58 +697,6 @@ export const PRODUCTS = [
     }
   },
 
-  // NIGHT DRESS
-  {
-    id: "nd-01",
-    name: "Victoria Gold Trim Mulberry Silk Nightgown",
-    category: "night-dress",
-    price: 2500,
-    originalPrice: 3200,
-    rating: 4.9,
-    reviewsCount: 45,
-    isNew: true,
-    isBestseller: true,
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
-    hoverImage: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80",
-    description: "Mulberry silk full-length nightgown featuring french eyelash lace trims.",
-    colors: ["Pearl White", "Rose Champagne", "Midnight Black"],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    sizePrices: {
-      "XS": 2300,
-      "S": 2500,
-      "M": 2700,
-      "L": 2900,
-      "XL": 3200
-    },
-    specs: {
-      "Silk Weight": "Pure Silk Satin Finish"
-    }
-  },
-  {
-    id: "nd-02",
-    name: "Royal Kimono Silk Robe with Hand-Cut Lace",
-    category: "night-dress",
-    price: 3200,
-    originalPrice: 4000,
-    rating: 4.8,
-    reviewsCount: 28,
-    isNew: false,
-    isBestseller: false,
-    image: "https://images.unsplash.com/photo-1508742345712-0656a285ac27?auto=format&fit=crop&w=800&q=80",
-    hoverImage: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
-    description: "Floor-sweeping silk kimono with wide bell sleeves, hand-cut French lace hem.",
-    colors: ["Golden Ivory", "Obsidian Black"],
-    sizes: ["S/M", "L/XL", "Custom Tailored"],
-    sizePrices: {
-      "S/M": 3200,
-      "L/XL": 3600,
-      "Custom Tailored": 4200
-    },
-    specs: {
-      "Fabric": "Heavyweight Silk Satin"
-    }
-  },
-
   // HIJABS & ABAYA
   {
     id: "ha-01",
@@ -973,11 +921,11 @@ export const PRODUCTS = [
     }
   },
 
-  // HOME DECORATORS
+  // HOME DECORATIONS
   {
     id: "hd-01",
     name: "Spherical Brass & Marble Table Lamp",
-    category: "home-decorators",
+    category: "home-decorations",
     price: 3200,
     originalPrice: 4000,
     rating: 4.9,
@@ -1001,7 +949,7 @@ export const PRODUCTS = [
   {
     id: "hd-02",
     name: "Artisan Gold Leaf Sculptural Bowl",
-    category: "home-decorators",
+    category: "home-decorations",
     price: 2400,
     originalPrice: 3000,
     rating: 4.8,
@@ -1020,6 +968,54 @@ export const PRODUCTS = [
     },
     specs: {
       "Craft": "Hand-hammered & Gilding"
+    }
+  },
+  {
+    id: "hd-03",
+    name: "Luxury Fluted Amber Glass & Brass Candleholder Set",
+    category: "home-decorations",
+    price: 2800,
+    originalPrice: 3500,
+    rating: 4.9,
+    reviewsCount: 42,
+    isNew: true,
+    isBestseller: true,
+    image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80",
+    hoverImage: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+    description: "Handcrafted ribbed amber crystal and solid brass candleholder duo designed for warm ambient luxury lighting.",
+    colors: ["Amber Gold", "Smoked Onyx"],
+    sizes: ["Standard Duo (2-Piece)", "Grand Trio (3-Piece)"],
+    sizePrices: {
+      "Standard Duo (2-Piece)": 2800,
+      "Grand Trio (3-Piece)": 3600
+    },
+    specs: {
+      "Material": "Handblown Borosilicate Glass & Solid Brass",
+      "Finish": "Mirror Polished Gold"
+    }
+  },
+  {
+    id: "hd-04",
+    name: "Gilded Botanical Sunburst Accent Wall Mirror",
+    category: "home-decorations",
+    price: 4500,
+    originalPrice: 5500,
+    rating: 5.0,
+    reviewsCount: 38,
+    isNew: true,
+    isBestseller: false,
+    image: "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&q=80",
+    hoverImage: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80",
+    description: "Sculptural metallic leaf frame with antique gold foil application and bevelled HD distortion-free crystal mirror.",
+    colors: ["Antique Gold", "Champagne Silver"],
+    sizes: ["Classic (60cm)", "Grand Statement (80cm)"],
+    sizePrices: {
+      "Classic (60cm)": 4500,
+      "Grand Statement (80cm)": 5800
+    },
+    specs: {
+      "Glass": "HD Bevelled Float Mirror",
+      "Frame": "Hand-forged Leaf Metal Alloy"
     }
   }
 ];

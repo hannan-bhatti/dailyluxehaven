@@ -15,7 +15,7 @@ const REVIEWS = [
     id: 2,
     name: "Sheikha Ayesha Al-Mansoor",
     role: "Haute Couture Patron",
-    text: "The Imperial Gold Velvet Abaya and Mulberry silk nightwear are pure perfection. The silk drape and gold sequin finish turn heads at every evening gala.",
+    text: "The Imperial Gold Velvet Abaya and handcrafted chiffon sets are pure perfection. The silk drape and gold sequin finish turn heads at every evening gala.",
     rating: 5,
     location: "Dubai, UAE",
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"

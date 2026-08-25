@@ -99,7 +99,7 @@ export default function Footer({ onSelectCategory, onShowToast, onOpenFaqTerms, 
               Quick Shop
             </h4>
             <ul className="space-y-2.5 text-gray-400 font-medium">
-              {['jewellery', 'hijabs-abaya', 'watches', 'purses', 'cosmetics', 'clothes'].map((catId) => {
+              {['jewellery', 'hijabs-abaya', 'watches', 'purses', 'home-decorations', 'cosmetics'].map((catId) => {
                 const cat = CATEGORIES.find(c => c.id === catId);
                 if (!cat) return null;
                 return (

@@ -6,7 +6,7 @@ export const HUBS = [
     description: "Explore our curated fashion pavilion featuring Swiss watches, 18k gold diamond jewellery, Italian leather purses, modest silk abayas, and royal fragrances.",
     heroImage: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=80",
     badge: "Haute Couture & Fine Gems",
-    categoryIds: ["watches", "clothes", "jewellery", "accessories", "purses", "night-dress", "hijabs-abaya", "cosmetics"]
+    categoryIds: ["watches", "clothes", "jewellery", "accessories", "purses", "hijabs-abaya", "cosmetics"]
   },
   {
     id: "home-living",
@@ -15,7 +15,7 @@ export const HUBS = [
     description: "Transform your living space with crystal decanters, French damask linens, architectural table lamps, and 24k gold audiophile electronics.",
     heroImage: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1600&q=80",
     badge: "Luxe Interior & Smart Tech",
-    categoryIds: ["house-hold", "gadgets", "home-decorators"]
+    categoryIds: ["house-hold", "gadgets", "home-decorations"]
   },
   {
     id: "kids-family",
@@ -90,14 +90,14 @@ export const CATEGORIES = [
     featured: true
   },
   {
-    id: "night-dress",
-    hubId: "fashion-beauty",
-    name: "Night dress",
-    description: "Pure Mulberry silk sleepwear, lace gowns & luxury robes.",
-    icon: "Moon",
-    count: 15,
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
-    featured: false
+    id: "home-decorations",
+    hubId: "home-living",
+    name: "Home Decorations",
+    description: "Sculptural lamps, artisan candles, marble bowls, gilded mirrors & luxury decor accents.",
+    icon: "Lamp",
+    count: 18,
+    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+    featured: true
   },
   {
     id: "hijabs-abaya",
@@ -137,16 +137,6 @@ export const CATEGORIES = [
     icon: "Sparkles",
     count: 12,
     image: "/products/gadgets/smart-temperature-bottle.jpg",
-    featured: true
-  },
-  {
-    id: "home-decorators",
-    hubId: "home-living",
-    name: "Home decorators",
-    description: "Sculptural vases, artisan candles, marble bowls & art accents.",
-    icon: "Lamp",
-    count: 25,
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
     featured: true
   }
 ];
