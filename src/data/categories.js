@@ -95,7 +95,7 @@ export const CATEGORIES = [
     name: "Home Decorations",
     description: "Luxury acrylic & wooden geometric wall frames and modern room decor.",
     icon: "Lamp",
-    count: 14,
+    count: 3,
     image: "/products/home-decorators/acrylic-wooden-frames-console.jpg",
     featured: true
   },
