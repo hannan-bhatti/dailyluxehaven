@@ -454,6 +454,39 @@ export const PRODUCTS = [
       "Load Capacity": "Holds Up To 5kg of Toiletries & Bottles"
     }
   },
+  {
+    id: "h-06",
+    name: "2-in-1 Rechargeable Coffee & Egg Beater (with Stand Tray)",
+    category: "house-hold",
+    price: 2300,
+    originalPrice: 3000,
+    rating: 4.9,
+    reviewsCount: 81,
+    isNew: true,
+    isBestseller: true,
+    isFlashSale: true,
+    flashSaleEndTime: "2026-09-30T23:59:59",
+    image: "/products/household/coffee-egg-beater.jpg",
+    hoverImage: "/products/household/coffee-egg-beater.jpg",
+    gallery: [
+      "/products/household/coffee-egg-beater.jpg"
+    ],
+    video: "/products/household/coffee-egg-beater-video.mp4",
+    colors: ["Stealth Matte Black"],
+    sizes: ["Complete 2-in-1 Set (Dual Whisks + Stand Tray + USB Cable)"],
+    sizePrices: {
+      "Complete 2-in-1 Set (Dual Whisks + Stand Tray + USB Cable)": 2300
+    },
+    description: "2in1 Rechargeable Egg and Coffee Beater (with Box Packing and Plastic Tray). High-speed cordless rechargeable electric hand mixer and milk frother. Includes two interchangeable food-grade stainless steel whisk heads (spring coffee frother and balloon egg beater) with 3 speed levels and countertop stand tray.",
+    specs: {
+      "Functions": "2-in-1 Electric Milk Frother & Egg Whisk",
+      "Speed Settings": "3 Adjustable Speed Levels with LED Status Indicators",
+      "Power & Battery": "USB Rechargeable Built-In Lithium Battery (Charging Cable Included)",
+      "Whisk Attachments": "Spring Double Coil Coffee Whisk + Balloon Egg Whisk",
+      "Accessories": "Dedicated Countertop Plastic Organizer Stand Tray",
+      "Packaging": "Original Retail Box Pack"
+    }
+  },
 
   // JEWELLERY
   {

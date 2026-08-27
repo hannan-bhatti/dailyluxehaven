@@ -53,9 +53,9 @@ export const CATEGORIES = [
     id: "house-hold",
     hubId: "home-living",
     name: "House hold",
-    description: "Stainless steel food storage sets, electric masala grinders, hand choppers & smart shelves.",
+    description: "Stainless steel bowl sets, rechargeable coffee beaters, electric grinders & choppers.",
     icon: "Home",
-    count: 18,
+    count: 20,
     image: "/products/household/stainless-bowls-stack.jpg",
     featured: true
   },
